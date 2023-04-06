@@ -7,8 +7,24 @@ on:
   pull_request:
 
 jobs:
+  paths-filter:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    outputs:
+      tauri: ${{ steps.filter.outputs.tauri }}
+    steps:
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        filters: |
+          tauri:
+            - 'src-tauri/**'
+
   test-tauri:
     name: CI / Tauri
+    needs: paths-filter
+    if: ${{ needs.changes.outputs.tauri == 'true' }}
     strategy:
       fail-fast: false
       matrix:
