@@ -14,12 +14,13 @@ jobs:
     outputs:
       tauri: ${{ steps.filter.outputs.tauri }}
     steps:
-    - uses: dorny/paths-filter@v2
-      id: filter
-      with:
-        filters: |
-          tauri:
-            - 'src-tauri/**'
+      - uses: actions/checkout@v3
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            tauri:
+              - 'src-tauri/**'
 
   test-tauri:
     name: CI / Tauri
