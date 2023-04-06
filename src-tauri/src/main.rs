@@ -49,7 +49,7 @@ fn run(path: String, args: &[&str]) -> Result<String, Box<dyn Error>> {
     let duration = start.elapsed();
 
     println!(
-        "Command {} finished in {:?}, code {}",
+        "[parrot] Command {} finished in {:?}, code {}",
         format!("paru {}", args.join(" ")),
         duration,
         output.status.code().unwrap_or(-1)
@@ -111,10 +111,10 @@ fn run_log(path: String, args: Vec<String>, sender: Sender<Log>) {
     });
 
     thread::spawn(move || {
-        let _ = child.wait();
+        let status = child.wait().expect("failed to wait on child");
         sender
             .send(Log {
-                line: "Success".to_string(),
+                line: format!("Command finished with {}", status),
                 stdout: true,
                 done: true,
             })
@@ -122,7 +122,7 @@ fn run_log(path: String, args: Vec<String>, sender: Sender<Log>) {
 
         let duration = start.elapsed();
         println!(
-            "Command {} finished in {:?}",
+            "[parrot] Command {} finished in {:?}",
             format!("paru {}", args.join(" ")),
             duration
         );
@@ -174,7 +174,7 @@ fn download_paru(resolver: PathResolver) {
                 }
             }
 
-            println!("Download URL: {}", download_url);
+            println!("[parrot] Download URL: {}", download_url);
 
             let resp = reqwest::blocking::get(&download_url).unwrap();
 
@@ -186,7 +186,7 @@ fn download_paru(resolver: PathResolver) {
 
             tar::Archive::new(decoder_zst).unpack(&path).unwrap();
 
-            println!("Downloaded paru to {:?}", path);
+            println!("[parrot] Downloaded paru to {:?}", path);
 
             config.set("paru", bin_path.to_str().unwrap()).unwrap();
             config.set("version", remote_version).unwrap();

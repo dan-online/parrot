@@ -41,7 +41,7 @@ pub async fn installed_search(window: Window, query: String, id: String) {
     match ran {
         Ok(output) => {
             let packages = parse_search(output);
-            println!("Found {} packages", packages.len());
+            println!("[parrot] Found {} packages", packages.len());
             window
                 .emit(&format!("installed_search_{}", id), packages)
                 .unwrap();

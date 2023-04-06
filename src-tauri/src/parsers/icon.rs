@@ -10,8 +10,6 @@ pub fn _get_icon(url: &str) -> Option<String> {
         .build()
         .unwrap();
 
-    println!("{:?}", split);
-
     if split.len() == 5 {
         let owner = split[3];
         let repo = split[4];

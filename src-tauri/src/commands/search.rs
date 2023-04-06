@@ -53,7 +53,7 @@ pub async fn search(window: Window, query: String, local: bool) {
 
     let duration = start.elapsed();
 
-    println!("Parsing finished in {:?}", duration);
+    println!("[parrot] Search parsing finished in {:?}", duration);
 
     store.set(&key, packages.clone()).unwrap();
 
