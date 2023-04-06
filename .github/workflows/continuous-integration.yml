@@ -46,7 +46,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  frontend
+  frontend:
     name: CI / Vite
     runs-on: ubuntu-latest
     steps:
