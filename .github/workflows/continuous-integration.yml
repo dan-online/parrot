@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  paths-filter:
+  changes:
     name: CI / Filter
     runs-on: ubuntu-latest
     permissions:
@@ -25,7 +25,7 @@ jobs:
 
   test-tauri:
     name: CI / Tauri
-    needs: paths-filter
+    needs: changes
     if: ${{ needs.changes.outputs.tauri == 'true' }}
     strategy:
       fail-fast: false
