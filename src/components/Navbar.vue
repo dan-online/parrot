@@ -53,6 +53,5 @@ const run = (command: string) => {
 <style>
 .titlebar {
     user-select: none;
-
 }
 </style>

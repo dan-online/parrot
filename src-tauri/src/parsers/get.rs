@@ -232,7 +232,7 @@ pub fn parse_get(output: String, repo: String) -> FullInfo {
             }
 
             _ => {
-                println!("Unrecognized key: {}", key);
+                // println!("Unrecognized key: {}", key);
             }
         };
     }
