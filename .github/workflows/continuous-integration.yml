@@ -8,6 +8,7 @@ on:
 
 jobs:
   paths-filter:
+    name: CI / Filter
     runs-on: ubuntu-latest
     permissions:
       pull-requests: read
