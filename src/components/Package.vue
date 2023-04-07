@@ -11,7 +11,7 @@ import Upvote from '~icons/bxs/upvote'
 import Star from '~icons/material-symbols/star-rounded'
 import Download from '~icons/fe/download'
 
-type pkg = PopularInfo | BaseInfo | AurInfo
+export type pkg = PopularInfo | BaseInfo | AurInfo
 
 const { pkg } = defineProps<{ pkg: pkg }>();
 const router = useRouter();

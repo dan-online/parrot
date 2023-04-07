@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// @ts-ignore
 import { RecycleScroller } from 'vue-virtual-scroller'
 import { computed, ref, watch } from 'vue'
 
@@ -14,6 +13,8 @@ import Package from "../components/Package.vue"
 import Spinner from '~icons/svg-spinners/180-ring-with-bg'
 
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
+
+import type { pkg } from "../components/Package.vue"
 
 
 const loading = ref(true);
@@ -65,7 +66,7 @@ watch(query, search)
         <Transition name="fade" mode="out-in">
             <div v-if="!loading">
                 <RecycleScroller class="scroller h-[30.6rem]" :item-size="77" :items="results" key-field="name"
-                    v-slot="{ item }">
+                    v-slot="{ item }: { item: pkg }">
                     <Package class="px-4" :pkg="item"></Package>
                 </RecycleScroller>
             </div>
