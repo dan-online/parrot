@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SideBar from './components/SideBar.vue';
 import Navbar from './components/Navbar.vue';
+import type { Component } from 'vue';
 </script>
 <template>
   <div class="bg-dark max-h-screen h-screen rounded flex border-zinc-700 overflow-hidden">
@@ -8,7 +9,7 @@ import Navbar from './components/Navbar.vue';
     <div class="w-full">
       <Navbar></Navbar>
       <Suspense>
-        <router-view v-slot="{ Component }">
+        <router-view v-slot="{ Component }: { Component: Component }">
           <transition name="fade" mode="out-in">
             <component :is="Component" />
           </transition>
