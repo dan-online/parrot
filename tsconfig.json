@@ -14,6 +14,9 @@
       "ESNext",
       "DOM"
     ],
+    "types": [
+      "unplugin-icons/types/vue",
+    ],
     "skipLibCheck": true
   },
   "include": [
