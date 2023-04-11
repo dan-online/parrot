@@ -19,7 +19,12 @@ pub async fn installed(window: Window) {
         Ok(output) => {
             let packages = output.split("\n\n").collect::<Vec<&str>>();
             for package_str in packages {
-                let package = parse_get(package_str.to_string(), "local".to_string());
+                let package = parse_get(
+                    window.clone(),
+                    package_str.to_string(),
+                    "local".to_string(),
+                    true,
+                );
                 results.push(package);
             }
         }

@@ -48,7 +48,7 @@ pub async fn get(window: Window, repo: String, name: String, id: String) {
 
         match ran {
             Ok(output) => {
-                let package = parse_get(output, repo.clone());
+                let package = parse_get(window.clone(), output, repo.clone(), false);
                 results[idx] = Some(package);
             }
             Err(e) => {

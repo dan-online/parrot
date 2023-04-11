@@ -1,6 +1,11 @@
-use crate::structs::info::{AurInfo, BaseInfo, FullInfo};
+use tauri::Window;
 
-pub fn parse_get(output: String, repo: String) -> FullInfo {
+use crate::{
+    commands::check_installed::check_installed,
+    structs::info::{AurInfo, BaseInfo, FullInfo},
+};
+
+pub fn parse_get(window: Window, output: String, repo: String, known_installed: bool) -> FullInfo {
     let lines = output.lines();
     let mut package: FullInfo;
 
@@ -135,6 +140,28 @@ pub fn parse_get(output: String, repo: String) -> FullInfo {
                     base.conflicts_with = value
                         .split("  ")
                         .map(|s| s.to_string())
+                        .filter(|s| {
+                            !s.is_empty()
+                                && if known_installed {
+                                    true
+                                } else {
+                                    check_installed(window.clone(), s)
+                                }
+                        })
+                        .collect::<Vec<String>>();
+                }
+                if let FullInfo::Aur(aur) = &mut package {
+                    aur.conflicts_with = value
+                        .split("  ")
+                        .map(|s| s.to_string())
+                        .filter(|s| {
+                            !s.is_empty()
+                                && if known_installed {
+                                    true
+                                } else {
+                                    check_installed(window.clone(), s)
+                                }
+                        })
                         .collect::<Vec<String>>();
                 }
             }

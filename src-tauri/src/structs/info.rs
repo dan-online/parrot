@@ -43,7 +43,7 @@ pub struct AurInfo {
     pub provides: String,
     pub depends_on: Vec<String>,
     pub optional_deps: Vec<String>, // [[name], ...]
-    pub conflicts_with: String,
+    pub conflicts_with: Vec<String>,
     pub maintainer: String,
     pub votes: String,
     pub popularity: String,
@@ -70,7 +70,7 @@ impl AurInfo {
             provides: String::new(),
             depends_on: Vec::new(),
             optional_deps: Vec::new(),
-            conflicts_with: String::new(),
+            conflicts_with: Vec::new(),
             maintainer: String::new(),
             votes: String::new(),
             popularity: String::new(),

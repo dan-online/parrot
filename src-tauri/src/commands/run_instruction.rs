@@ -5,7 +5,12 @@ use tauri::{Manager, Window};
 use crate::{run_log, store::config::ConfigStore, structs::info::Log};
 
 #[tauri::command]
-pub async fn run_instruction(window: Window, instruction: String, package: String) {
+pub async fn run_instruction(
+    window: Window,
+    instruction: String,
+    optional_deps: Vec<String>,
+    package: String,
+) {
     let config = ConfigStore::new(window.app_handle().path_resolver());
 
     let path = config.get("paru").unwrap().unwrap_or("paru".to_string());
@@ -13,7 +18,18 @@ pub async fn run_instruction(window: Window, instruction: String, package: Strin
 
     match instruction.as_str() {
         "install" => {
-            run_log(path, vec!["-S".to_string(), package.to_string()], tx);
+            let mut args = vec![
+                "-S".to_string(),
+                package.to_string(),
+                "--needed".to_string(),
+            ];
+
+            if optional_deps.len() > 0 {
+                args.push("--asdeps".to_string());
+                args.extend(optional_deps)
+            }
+
+            run_log(path, args, tx);
         }
         "remove" => {
             run_log(path, vec!["-R".to_string(), package.to_string()], tx);

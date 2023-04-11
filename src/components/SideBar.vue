@@ -23,11 +23,11 @@ const pages = [
         path: "/installed",
         icon: Download,
     },
-    {
-        name: "Settings",
-        path: "/settings",
-        icon: Gear,
-    },
+    // {
+    //     name: "Settings",
+    //     path: "/settings",
+    //     icon: Gear,
+    // },
 
 ]
 

@@ -21,6 +21,9 @@ const loading = ref(true);
 const loadingInstruction = ref(false);
 const logsRef = ref<HTMLElement | null>(null);
 const logsStatus = ref(0) // 0 = not shown, 1 = shown, 2 = shown and done
+const conflicts = ref(false);
+const optionalDeps = ref(false);
+const chosenOptionals = ref<string[]>([]);
 const route = useRoute();
 
 const id = crypto.randomUUID();
@@ -80,9 +83,26 @@ const remotePkg = computed(() => {
     return pkgs.value[1];
 })
 
-function run(instruction: string) {
+function run(instruction: string, skippedOptionals = false) {
+    console.log(instruction)
+    if (instruction === "install") {
+        if (remotePkg.value.conflicts_with.length > 0) {
+            conflicts.value = true;
+            return;
+        }
+
+        if (remotePkg.value.optional_deps.length > 0 && !skippedOptionals) {
+            optionalDeps.value = true;
+            return;
+        }
+    }
+
     loadingInstruction.value = true;
-    invoke("run_instruction", { instruction, package: remotePkg.value ? remotePkg.value.name : localPkg.value.name })
+    optionalDeps.value = false;
+
+    const command = { instruction, package: remotePkg.value ? remotePkg.value.name : localPkg.value.name, optionalDeps: Object.values(chosenOptionals.value) };
+
+    invoke("run_instruction", command)
 }
 
 const pkg = remotePkg;
@@ -117,6 +137,59 @@ const isUpgradable = computed(() => {
                         Continue
                     </button>
 
+                </div>
+            </div>
+
+        </Transition>
+        <Transition name="fade" mode="out-in">
+            <div v-if="conflicts"
+                class="fixed flex items-center justify-center bg-[rgba(0,0,0,0.8)] top-0 left-0 h-full w-full">
+                <div class="bg-zinc-800 rounded p-2 w-2/3 text-sm">
+                    <h1 class="text-2xl text-gray-200">Conflict</h1>
+                    <hr class="border-zinc-700 my-2">
+                    <p>
+                        {{ pkg.name }} conflicts with: <router-link v-for="c in pkg.conflicts_with"
+                            class="text-accent underline mr-2" :to="`/search?q=${c}`">
+                            {{ c }}</router-link>
+                    </p>
+                    <button @click="conflicts = false"
+                        class="px-6 py-2 rounded bg-zinc-700 disabled:opacity-50 mt-3 disabled:bg-zinc-900 text-gray-200 w-32 flex items-center justify-center">
+                        Dismiss
+                    </button>
+                </div>
+            </div>
+        </Transition>
+        <Transition name="fade" mode="out-in">
+            <div v-if="optionalDeps"
+                class="fixed flex items-center justify-center bg-[rgba(0,0,0,0.8)] top-0 left-0 h-full w-full">
+                <div class="bg-zinc-800 rounded p-2 w-2/3 text-sm">
+                    <h1 class="text-2xl text-gray-200">Optional</h1>
+                    <hr class="border-zinc-700 my-2">
+                    <div v-if="!Array.isArray(pkg.optional_deps[0])">
+                        <div class="flex items-center" v-for="optional in (pkg.optional_deps as string[])">
+                            <input type="checkbox" class="w-4 accent-accent h-4" :id="optional" :value="optional"
+                                v-model="chosenOptionals">
+                            <label class="ml-2 text-xl" :for="optional">{{ optional }}</label>
+                        </div>
+                    </div>
+                    <div v-else>
+                        <div class="flex items-center" v-for="optional in (pkg.optional_deps as string[][])">
+                            <input type="checkbox" class="w-4 accent-accent h-4" :id="optional[0]" :value="optional[0]"
+                                v-model="chosenOptionals">
+                            <label class="ml-2 items-center text-xl" :for="optional[0]">{{ optional[0] }} ({{ optional[1]
+                            }})</label>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button @click="optionalDeps = false"
+                            class="px-6 py-2 rounded bg-zinc-700 disabled:opacity-50 mt-3 disabled:bg-zinc-900 text-gray-200 w-32 flex items-center justify-center">
+                            Cancel
+                        </button>
+                        <button @click="run('install', true)"
+                            class="px-6 py-2 ml-auto rounded bg-accent disabled:opacity-50 mt-3 disabled:bg-zinc-900 text-gray-200 w-32 flex items-center justify-center">
+                            Continue
+                        </button>
+                    </div>
                 </div>
             </div>
         </Transition>
@@ -159,7 +232,7 @@ const isUpgradable = computed(() => {
                 <div class="mt-2 pr-2 overflow-auto w-full h-[80%]">
                     <table class="w-full">
                         <tbody>
-                            <tr v-for="[key, val] in Object.entries(pkg).filter(x => x[1] && x[1] != 'None' && !(Array.isArray(x[1]) && x[1][0] == 'None'))"
+                            <tr v-for="[key, val] in Object.entries(pkg).filter(x => x[1] && x[1].length > 0 && x[1] != 'None' && !(Array.isArray(x[1]) && x[1][0] == 'None'))"
                                 class="border-b border-zinc-700">
                                 <td class="px-4 py-2">{{ key }}</td>
                                 <td class="px-4 py-2">
