@@ -2,8 +2,8 @@ name: Continuous Delivery / Release Git
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - main
 
 jobs:
   publish:
