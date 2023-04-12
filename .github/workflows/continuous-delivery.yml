@@ -69,4 +69,4 @@ jobs:
           commit_message: Update AUR package
           ssh_keyscan_types: rsa,dsa,ecdsa,ed25519
           assets: |
-            ./build/parrot_*.dev
+            ./build/parrot_*.deb
