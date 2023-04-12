@@ -24,6 +24,7 @@ cat > "$build_dir/PKGBUILD" <<EOF
 # Maintainer: DanCodes <dan@dancodes.online>
 pkgname="parrot-bin"
 pkgver="$pkgver"
+pkgrel=1
 pkgdesc="$pkgdesc"
 arch=('x86_64')
 url="https://github.com/dan-online/parrot"
