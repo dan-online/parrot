@@ -13,7 +13,7 @@ bundle_dir="src-tauri/target/release/bundle"
 build_dir="./build"
 
 # extract package attributes
-productName="$(jq -r '.package.productName' < "$conf_json")"
+productName="parrot"
 pkgver="$(jq -r '.package.version' < "$conf_json")"
 pkgdesc="$(jq -r '.tauri.bundle.longDescription' < "$conf_json")"
 
@@ -26,7 +26,7 @@ cp -f "$deb_path" "$build_dir/$deb_basename"
 # emit PKGBUILD
 cat > "$build_dir/PKGBUILD" <<EOF
 # Maintainer: DanCodes <dan@dancodes.online>
-pkgname="$productName-bin"
+pkgname="parrot-bin"
 pkgver="$pkgver"
 pkgrel=1
 pkgdesc="$pkgdesc"
