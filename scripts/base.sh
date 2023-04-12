@@ -15,7 +15,7 @@ productName="parrot"
 productTitle="Parrot"
 
 # pkg variables
-pkgver=`git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'`
+pkgver="$(jq -r '.package.version' < "$conf_json")"
 pkgdesc="$(jq -r '.tauri.bundle.longDescription' < "$conf_json")"
 
 # emit PKGBUILD
