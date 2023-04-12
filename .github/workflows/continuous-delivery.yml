@@ -38,7 +38,7 @@ jobs:
       - name: Tweak package.json
         run: python3 -c "import os; import json; p = json.load(open('package.json')); p['version'] = os.environ['RELEASE_VERSION']; json.dump(p, open('package.json', 'w'), indent=2, ensure_ascii=False);"
 
-      - uses: actions-rs/toolchain@1
+      - uses: actions-rs/toolchain@1.0.6
         with:
           profile: minimal
           toolchain: stable
@@ -54,7 +54,7 @@ jobs:
           yarn tauri build
 
       - name: Publish AUR package
-        uses: KSXGitHub/github-actions-deploy-aur@2
+        uses: KSXGitHub/github-actions-deploy-aur@2.7.0
         with:
           pkgname: parrot-bin
           pkgbuild: ./build/PKGBUILD
