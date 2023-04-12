@@ -63,7 +63,7 @@ jobs:
           gh release upload ${{ env.RELEASE_VERSION }} "$(find ./build -name *.deb)" --clobber
           ASSET_URL=$(gh release view ${{ env.RELEASE_VERSION }} --json assets --jq '.assets[].url')
           echo "Asset URL: $ASSET_URL"
-          sed -i "s|source=(.*)|source=('$ASSET_URL')|" PKGBUILD
+          sed -i "s|source=(.*)|source=('$ASSET_URL')|" ./build/PKGBUILD
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
