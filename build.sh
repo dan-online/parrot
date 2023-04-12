@@ -33,7 +33,7 @@ pkgdesc="$pkgdesc"
 arch=('x86_64')
 url="https://github.com/dan-online/parrot"
 license=('MIT')
-depends=('gtk3' 'webkit2gtk' 'openssl-1.1')
+depends=('gtk3' 'webkit2gtk')
 source=("")
 sha512sums=("SKIP")
 

@@ -36,7 +36,8 @@
       "identifier": "parrot.dancodes.online",
       "targets": [
         "deb"
-      ]
+      ],
+      "longDescription": "GUI wrapper in Tauri for the Arch Linux package manager, pacman using the wrapper paru. Designed to be intuitive, powerful and user-friendly"
     },
     "security": {
       "csp": null
