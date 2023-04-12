@@ -21,9 +21,11 @@ jobs:
 
       - name: Set release version
         run: |
-          python3 -c "import os; tag = os.environ['GITHUB_REF'].split('/')[-1]; f = open(os.environ['GITHUB_ENV'], 'a'); f.write('RELEASE_VERSION='+tag); f.close();"
+          export RELEASE_VERSION="${GITHUB_TAG:1}"
           echo "Version: $RELEASE_VERSION"
           ./scripts/bump.sh $RELEASE_VERSION
+        env:
+          GITHUB_TAG: ${{ github.event.release.tag_name }}
       
       - name: Setup Node
         uses: josh-development/.github/setup-node@main
