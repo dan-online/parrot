@@ -34,7 +34,7 @@ arch=('x86_64')
 url=""
 license=('')
 depends=('gtk3' 'webkit2gtk')
-source=("$deb_basename")
+source=("")
 sha512sums=("SKIP")
 
 package(){

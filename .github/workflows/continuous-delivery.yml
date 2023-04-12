@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - '*'
+  workflow_dispatch:
 
 jobs:
   publish-tauri:
@@ -58,6 +59,15 @@ jobs:
       - name: Build PKBUILD
         run: ./build.sh
 
+      - name: Upload release asset
+        run: |
+          gh release upload ${{ github.event.release.tag_name }} ./build/*.deb --clobber
+          ASSET_URL=$(gh release view ${{ github.event.release.tag_name }} --json assets[0].browser_download_url | jq -r '.assets[0].browser_download_url')
+          echo "Asset URL: $ASSET_URL"
+          sed -i "s|source=(.*)|source=('$ASSET_URL')|" PKGBUILD
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@v2
         with:
@@ -68,5 +78,3 @@ jobs:
           ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
           commit_message: Update AUR package
           ssh_keyscan_types: rsa,dsa,ecdsa,ed25519
-          assets: |
-            ./build/parrot_*.deb
