@@ -24,7 +24,7 @@ listen<PopularInfo[]>("popular", ({ payload }) => {
     <div class="h-full">
         <Transition name="fade" mode="out-in">
             <div v-if="!loading" class="h-full overflow-y-auto grid">
-                <Package v-for="pkg in packages" :key="pkg.name" :pkg="pkg"></Package>
+                <Package v-for="pkg in packages" extraClass="px-2" :key="pkg.name" :pkg="pkg"></Package>
             </div>
             <div v-else class="flex items-center justify-center h-2/3">
                 <Spinner class="text-accent text-2xl"></Spinner>

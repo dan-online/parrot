@@ -13,7 +13,7 @@ import Download from '~icons/fe/download'
 
 export type pkg = PopularInfo | BaseInfo | AurInfo
 
-const { pkg } = defineProps<{ pkg: pkg }>();
+const { pkg, extraClass } = defineProps<{ pkg: pkg, extraClass?: string }>();
 const router = useRouter();
 
 function go(pkg: pkg) {
@@ -25,7 +25,7 @@ function go(pkg: pkg) {
         <div @click="go(pkg)"
             class="flex hover:border-accent transition cursor-pointer border-b border-zinc-700 mb-2 py-4 px-2"
             :key="pkg.name">
-            <div class="text-white">
+            <div :class="['text-white', extraClass]">
                 <div class="flex items-center">
                     <div class="flex items-baseline">
                         <h1>{{ pkg.repo }} / {{ pkg.name }}</h1>
