@@ -4,7 +4,6 @@ on:
   push:
     tags:
       - '*'
-  workflow_dispatch:
 
 jobs:
   publish-tauri:
@@ -61,8 +60,8 @@ jobs:
 
       - name: Upload release asset
         run: |
-          gh release upload ${{ github.event.release.tag_name }} "$(find ./build -name *.deb)" --clobber
-          ASSET_URL=$(gh release view ${{ github.event.release.tag_name }} --json assets[0].browser_download_url | jq -r '.assets[0].browser_download_url')
+          gh release upload ${{ env.RELEASE_VERSION }} "$(find ./build -name *.deb)" --clobber
+          ASSET_URL=$(gh release view ${{ env.RELEASE_VERSION }} --json assets[0].browser_download_url | jq -r '.assets[0].browser_download_url')
           echo "Asset URL: $ASSET_URL"
           sed -i "s|source=(.*)|source=('$ASSET_URL')|" PKGBUILD
         env:
