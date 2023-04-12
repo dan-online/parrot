@@ -51,7 +51,12 @@ jobs:
           sudo sed -i 's/azure\.//' /etc/apt/sources.list
           sudo apt update -y
           sudo apt install -y libgtk-3-dev libwebkit2gtk-4.0-dev libappindicator3-dev librsvg2-dev patchelf
-          yarn tauri build
+      
+      - name: Build Tauri App
+        run: yarn tauri build
+
+      - name: Build PKBUILD
+        run: ./build.sh
 
       - name: Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@v2
