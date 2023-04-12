@@ -7,8 +7,8 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "parrot",
-    "version": "0.0.0"
+    "productName": "parrot-bin",
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -34,7 +34,7 @@
         "icons/icon.ico"
       ],
       "identifier": "parrot.dancodes.online",
-      "targets": "all"
+      "targets": ["deb"]
     },
     "security": {
       "csp": null

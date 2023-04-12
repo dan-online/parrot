@@ -1,10 +1,10 @@
 [package]
 name = "parrot"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
+version = "1.0.0"
+description = "A Rust GUI in Tauri for the Arch Linux package manager, pacman using the wrapper paru"
+authors = ["DanCodes"]
+license = "MIT"
+repository = "https://github.com/dan-online/Parrot"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

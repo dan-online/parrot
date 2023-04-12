@@ -26,3 +26,6 @@ dist-ssr
 # Yarn files
 .yarn/install-state.gz
 .yarn/build-state.yml
+
+# PKGBUILD
+build/
