@@ -27,7 +27,7 @@ pkgdesc="$(jq -r '.tauri.bundle.longDescription' < "$conf_json")"
 cat > "$build_dir/PKGBUILD" <<EOF
 # Maintainer: DanCodes <dan@dancodes.online>
 pkgname=$productName-git
-pkgver="$pkgver-$commit_id"
+pkgver="$pkgver.$commit_id"
 pkgrel=1
 pkgdesc="$pkgdesc"
 arch=('x86_64')
