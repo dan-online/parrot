@@ -29,7 +29,17 @@
 
 
 <!-- TABLE OF CONTENTS -->
-
+- [About The Project](#about-the-project)
+- [Install](#install)
+  * [Arch Linux](#arch-linux)
+- [Built With](#built-with)
+- [Development](#development)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 
 
@@ -42,7 +52,17 @@ Parrot is a GUI for the Arch Linux package manager, `paru`, a wrapper of `pacman
 
 With Parrot's sleek GUI, users can easily browse available packages, search for specific packages, and install or uninstall them with just a few clicks. Whether you're a beginner or an advanced Arch Linux user, Parrot is a powerful tool that can help you manage your system more efficiently.
 
-### Built With
+## Install
+
+### Arch Linux
+
+```sh
+yay -S parrot-bin
+```
+
+Or use an aur helper of your choice.
+
+## Built With
 
 <a href="https://tauri.app">
   <img src="https://img.shields.io/badge/Tauri-35495E.svg?style=for-the-badge&logo=tauri">
