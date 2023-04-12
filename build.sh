@@ -9,7 +9,7 @@ set -eu -o pipefail
 #
 
 conf_json="src-tauri/tauri.conf.json"
-bundle_dir="src-tauri/target/release/bundle"
+# bundle_dir="src-tauri/target/release/bundle"
 build_dir="./build"
 
 # extract package attributes
@@ -18,7 +18,7 @@ pkgver="$(jq -r '.package.version' < "$conf_json")"
 pkgdesc="$(jq -r '.tauri.bundle.longDescription' < "$conf_json")"
 
 # copy deb file locally
-deb_path="$(find $bundle_dir -name '*.deb' | head -n 1)"
+deb_path="$(find -name '*.deb' | head -n 1)"
 deb_basename="$(basename "$deb_path")"
 mkdir -p "$build_dir"
 cp -f "$deb_path" "$build_dir/$deb_basename"
