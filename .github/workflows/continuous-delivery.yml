@@ -57,7 +57,7 @@ jobs:
       - name: Build Tauri App
         run: yarn tauri build
 
-      - name: Build PKBUILD
+      - name: Build PKGBUILD
         run: ./scripts/build.sh
 
       - name: Upload release asset

@@ -15,11 +15,9 @@ mkdir -p $build_dir
 source_url="https://github.com/dan-online/parrot/archive/$full_commit_id.tar.gz"
 sha256sums="$(curl -sSL "$source_url" | sha256sum | cut -d' ' -f1)"
 
-echo "Downloading $source_url"
-echo "sha256sums: $sha256sums"
-
 # extract package attributes
 productName="parrot"
+productTitle="Parrot"
 pkgver="$(jq -r '.package.version' < "$conf_json")"
 pkgdesc="$(jq -r '.tauri.bundle.longDescription' < "$conf_json")"
 
@@ -40,9 +38,11 @@ source=("\$pkgname-\$pkgver.tar.gz::$source_url")
 sha256sums=('${sha256sums}')
 
 prepare() {
-  cd "\$pkgname-\$pkgver"
+  cd "$productName-$full_commit_id"
   export YARN_CACHE_FOLDER="\$srcdir/yarn-cache"
   yarn install
+
+  sed -i "s/\"productName\": \"$productTitle\"/\"productName\": \"$productTitle ($commit_id)\"/" "$conf_json"
 
   cd src-tauri
   export RUSTUP_TOOLCHAIN=stable
@@ -50,29 +50,29 @@ prepare() {
 }
 
 build() {
-  cd "\$pkgname-\$pkgver"
+  cd "$productName-$full_commit_id"
   export YARN_CACHE_FOLDER="\$srcdir/yarn-cache"
   export RUSTUP_TOOLCHAIN=stable
-  yarn build
   yarn tauri build
 }
 
 package() {
-  cd "\$pkgname-\$pkgver"
-  install -Dm755 "src-tauri/target/release/\$pkgname" -t "\$pkgdir/usr/bin/"
+  cd "$productName-$full_commit_id"
+  
+  install -Dm755 "src-tauri/target/release/$productName-$commit_id" -t "\$pkgdir/usr/bin/"
 
   for i in 32x32 128x128 128x128@2x; do
     install -Dm644 src-tauri/icons/\${i}.png \
-      "\$pkgdir/usr/share/icons/hicolor/\${i}/apps/\$pkgname.png"
+      "\$pkgdir/usr/share/icons/hicolor/\${i}/apps/$productName.png"
   done
-  install -Dm644 "src-tauri/target/release/bundle/deb/\${pkgname}_\${pkgver}_amd64/data/usr/share/icons/hicolor/256x256@2/apps/\$pkgname.png" -t \
-    "\$pkgdir/usr/share/icons/hicolor/256x256@2/apps/\$pkgname.png"
+  install -Dm644 "src-tauri/target/release/bundle/deb/${productName}-${commit_id}_${pkgver}_amd64/data/usr/share/icons/hicolor/256x256@2/apps/${productName}-${commit_id}.png" -t \
+    "\$pkgdir/usr/share/icons/hicolor/256x256@2/apps/$productName.png"
   install -Dm644 src-tauri/icons/icon.png \
-    "\$pkgdir/usr/share/icons/hicolor/512x512/apps/\$pkgname.png"
+    "\$pkgdir/usr/share/icons/hicolor/512x512/apps/$productName.png"
 
-  install -Dm644 "src-tauri/target/release/bundle/deb/\${pkgname}_\${pkgver}_amd64/data/usr/share/applications/\$pkgname.desktop" -t \
+  install -Dm644 "src-tauri/target/release/bundle/deb/${productName}-${commit_id}_${pkgver}_amd64/data/usr/share/applications/${productName}-${commit_id}.desktop" -t \
     "\$pkgdir/usr/share/applications/"
 
-  install -Dm644 LICENSE -t "\$pkgdir/usr/share/licenses/\$pkgname/"
+  install -Dm644 LICENSE -t "\$pkgdir/usr/share/licenses/${productName}-${commit_id}/"
 }
 EOF
