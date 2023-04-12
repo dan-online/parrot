@@ -19,14 +19,13 @@ jobs:
         with:
           ref: ${{ github.event.release.tag_name }}
 
+      - name: Set Release env
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+
       - name: Set release version
         run: |
-          export RELEASE_VERSION="${GITHUB_TAG:1}"
-          echo "Version: ${{ env.RELEASE_VERSION }}"
-          echo "Tag: ${{ env.GITHUB_TAG }}"
           ./scripts/bump.sh ${{ env.RELEASE_VERSION }}
-        env:
-          GITHUB_TAG: ${{ github.event.release.tag_name }}
+          exit 1
       
       - name: Setup Node
         uses: josh-development/.github/setup-node@main
