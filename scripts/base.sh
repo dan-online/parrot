@@ -1,4 +1,6 @@
 #!/bin/bash
+# Inspired by https://github.com/yochananmarqos/pkgbuilds/blob/master/parrot/PKGBUILD
+
 set -eu -o pipefail
 
 # variables
