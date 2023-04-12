@@ -19,6 +19,9 @@ deb_path="$(find -name '*.deb' | head -n 1)"
 deb_basename="$(basename "$deb_path")"
 cp -f "$deb_path" "$build_dir/$deb_basename"
 
+# get sha256sum
+sha256sum="$(sha256sum "$build_dir/$deb_basename" | cut -d ' ' -f 1)"
+
 # emit PKGBUILD
 cat > "$build_dir/PKGBUILD" <<EOF
 # Maintainer: DanCodes <dan@dancodes.online>
@@ -30,10 +33,10 @@ arch=('x86_64')
 url="https://github.com/dan-online/parrot"
 license=('MIT')
 depends=('gtk3' 'webkit2gtk')
-source=("")
-sha512sums=("SKIP")
+source=("https://github.com/dan-online/parrot/releases/download/$pkgver/$deb_basename")
+sha256sums=("$sha256sum")
 
-package(){
+package() {
   tar -xz -f data.tar.gz -C "\${pkgdir}"
 }
 EOF
