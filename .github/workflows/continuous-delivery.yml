@@ -61,7 +61,7 @@ jobs:
       - name: Upload release asset
         run: |
           gh release upload ${{ env.RELEASE_VERSION }} "$(find ./build -name *.deb)" --clobber
-          ASSET_URL=$(gh release view ${{ env.RELEASE_VERSION }} --json assets[0].browser_download_url | jq -r '.assets[0].browser_download_url')
+          ASSET_URL=$(gh release view ${{ env.RELEASE_VERSION }} --json assets --jq '.assets[].url')
           echo "Asset URL: $ASSET_URL"
           sed -i "s|source=(.*)|source=('$ASSET_URL')|" PKGBUILD
         env:
