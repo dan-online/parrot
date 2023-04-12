@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eu -o pipefail
-
+rm -rf build
 #
 # based on the output of
 #   debtap -P src-tauri/target/release/bundle/deb/tauri-vite-example_0.1.0_amd64.deb
@@ -8,7 +8,7 @@ set -eu -o pipefail
 # see also https://github.com/tauri-apps/tauri/pull/4301
 #
 
-conf_json="src-tauri/tauri.conf.json"
+conf_json="./src-tauri/tauri.conf.json"
 # bundle_dir="src-tauri/target/release/bundle"
 build_dir="./build"
 
