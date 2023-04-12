@@ -15,7 +15,7 @@ pkgver="$(jq -r '.package.version' < "$conf_json")"
 pkgdesc="$(jq -r '.tauri.bundle.longDescription' < "$conf_json")"
 
 # copy deb file locally
-deb_path="$(find -name '*.deb' | head -n 1)"
+deb_path="$(find ./src-tauri/target/release -name '*.deb' | head -n 1)"
 deb_basename="$(basename "$deb_path")"
 cp -f "$deb_path" "$build_dir/$deb_basename"
 

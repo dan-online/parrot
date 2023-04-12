@@ -53,7 +53,9 @@ jobs:
           sudo apt install -y libgtk-3-dev libwebkit2gtk-4.0-dev libappindicator3-dev librsvg2-dev patchelf
       
       - name: Build Tauri App
-        run: yarn tauri build
+        run: |
+          rm -rf src-tauri/target/release/**/*.deb
+          yarn tauri build
 
       - name: Build PKGBUILD
         run: ./scripts/build.sh
@@ -74,3 +76,16 @@ jobs:
           ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
           commit_message: Update AUR package
           ssh_keyscan_types: rsa,dsa,ecdsa,ed25519
+      
+      - name: Commit files
+        run: |
+          git config --local user.email "dan@dancodes.online"
+          git config --local user.name "DanCodes"
+          git config --local user.username "dan-online"
+          git commit -a -m "chore(release): v${{ env.RELEASE_VERSION }}"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
