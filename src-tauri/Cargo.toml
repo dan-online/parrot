@@ -1,6 +1,6 @@
 [package]
 name = "parrot"
-version = "1.0.3"
+version = "1.0.4"
 description = "A Rust GUI in Tauri for the Arch Linux package manager, pacman using the wrapper paru"
 authors = ["DanCodes"]
 license = "MIT"
