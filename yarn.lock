@@ -431,13 +431,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-vue@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@vitejs/plugin-vue@npm:4.2.0"
+"@vitejs/plugin-vue@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "@vitejs/plugin-vue@npm:4.2.1"
   peerDependencies:
     vite: ^4.0.0
     vue: ^3.2.25
-  checksum: 210dad859d996a9b0fa00f7806de282d6a04581ced1792dd902d3f28c46cde33f8db03b164bed3b066c5602f2b962a00473b7dfbe234f0a276eb61cc9cc96669
+  checksum: a7266a45378d5fd7813699cf97dfac0e313dc63bd245a1c932848b2b5dc58aede922231d5a534baeeb7e2842c7172f17194a4833bd6a7a6ed61dc0a31d60c7c9
   languageName: node
   linkType: hard
 
@@ -1692,7 +1692,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.4":
+"nanoid@npm:^3.3.4, nanoid@npm:^3.3.6":
   version: 3.3.6
   resolution: "nanoid@npm:3.3.6"
   bin:
@@ -1820,12 +1820,12 @@ __metadata:
     "@tauri-apps/api": ^2.0.0-alpha.3
     "@tauri-apps/cli": ^1.2.3
     "@types/node": ^18.16.1
-    "@vitejs/plugin-vue": ^4.2.0
+    "@vitejs/plugin-vue": ^4.2.1
     "@vueuse/integrations": ^10.1.0
     fuse.js: ^6.6.2
     typescript: ^5.0.4
     unplugin-icons: ^0.16.1
-    vite: ^4.3.2
+    vite: ^4.3.3
     vite-plugin-windicss: ^1.8.10
     vue: ^3.2.47
     vue-router: 4
@@ -1877,7 +1877,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.10, postcss@npm:^8.4.21":
+"postcss@npm:^8.1.10":
   version: 8.4.21
   resolution: "postcss@npm:8.4.21"
   dependencies:
@@ -1885,6 +1885,17 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: e39ac60ccd1542d4f9d93d894048aac0d686b3bb38e927d8386005718e6793dbbb46930f0a523fe382f1bbd843c6d980aaea791252bf5e176180e5a4336d9679
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.23":
+  version: 8.4.23
+  resolution: "postcss@npm:8.4.23"
+  dependencies:
+    nanoid: ^3.3.6
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: 8bb9d1b2ea6e694f8987d4f18c94617971b2b8d141602725fedcc2222fdc413b776a6e1b969a25d627d7b2681ca5aabb56f59e727ef94072e1b6ac8412105a2f
   languageName: node
   linkType: hard
 
@@ -2270,13 +2281,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.3.2":
-  version: 4.3.2
-  resolution: "vite@npm:4.3.2"
+"vite@npm:^4.3.3":
+  version: 4.3.3
+  resolution: "vite@npm:4.3.3"
   dependencies:
     esbuild: ^0.17.5
     fsevents: ~2.3.2
-    postcss: ^8.4.21
+    postcss: ^8.4.23
     rollup: ^3.21.0
   peerDependencies:
     "@types/node": ">= 14"
@@ -2303,7 +2314,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 0194c06c44efa6fc2f81389d16d90cc3da8e7a58d071fe80e787053d604e0ea653e367fc6eb0528058d255c1ae72625396128561301add48b8e480c45343d11c
+  checksum: 99970cb1fed3330458e60f8341ec73c4260c82d815e51c95295321ab496e4c8cb447bc942daf4d94f78bbc8b2bed36cbc237f43fdc1cede19250fac737e5a0fc
   languageName: node
   linkType: hard
 
