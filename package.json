@@ -29,5 +29,5 @@
     "vue-tsc": "^1.6.3",
     "windicss": "^3.5.6"
   },
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@3.5.1"
 }
