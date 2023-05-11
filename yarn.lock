@@ -440,13 +440,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-vue@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "@vitejs/plugin-vue@npm:4.2.1"
+"@vitejs/plugin-vue@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@vitejs/plugin-vue@npm:4.2.2"
   peerDependencies:
     vite: ^4.0.0
     vue: ^3.2.25
-  checksum: a7266a45378d5fd7813699cf97dfac0e313dc63bd245a1c932848b2b5dc58aede922231d5a534baeeb7e2842c7172f17194a4833bd6a7a6ed61dc0a31d60c7c9
+  checksum: a17e7bae9e20175083209aae3a4f52899be2176a45a408c28cc794c4f6a654b12e7ee7a8be9b7d55735435bc8e25909b3b318848b1d9f593bd1d108282c1c76d
   languageName: node
   linkType: hard
 
@@ -1915,7 +1915,7 @@ __metadata:
     "@tauri-apps/api": ^2.0.0-alpha.3
     "@tauri-apps/cli": ^1.3.1
     "@types/node": ^18.16.7
-    "@vitejs/plugin-vue": ^4.2.1
+    "@vitejs/plugin-vue": ^4.2.2
     "@vueuse/integrations": ^10.1.2
     fuse.js: ^6.6.2
     typescript: ^5.0.4
