@@ -20,7 +20,7 @@ reqwest = { version = "0.11.18",  features = ["blocking", "json"] }
 ts-rs = "6.2"
 scraper = "0.17.1"
 sled = "0.34.7"
-zstd = "0.12.3"
+zstd = "0.12.4"
 tar = "0.4.39"
 
 [features]
