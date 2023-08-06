@@ -427,10 +427,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.17.1":
-  version: 18.17.1
-  resolution: "@types/node@npm:18.17.1"
-  checksum: 56201bda9a2d05d68602df63b4e67b0545ac8c6d0280bd5fb31701350a978a577a027501fbf49db99bf177f2242ebd1244896bfd35e89042d5bd7dfebff28d4e
+"@types/node@npm:^18.17.3":
+  version: 18.17.3
+  resolution: "@types/node@npm:18.17.3"
+  checksum: 884fb68936b2b0ff90863fcf80610dd2f3d9fe1947897248b0138df05fe41ee6ce62941b37b565e3b3fd77601cd3977a64de858654c6ab9064413b171740d6ba
   languageName: node
   linkType: hard
 
@@ -1827,13 +1827,13 @@ __metadata:
     "@iconify/json": ^2.2.64
     "@tauri-apps/api": ^2.0.0-alpha.3
     "@tauri-apps/cli": ^1.4.0
-    "@types/node": ^18.17.1
+    "@types/node": ^18.17.3
     "@vitejs/plugin-vue": ^4.2.3
     "@vueuse/integrations": ^10.1.2
     fuse.js: ^6.6.2
     typescript: ^5.1.6
     unplugin-icons: ^0.16.1
-    vite: ^4.4.7
+    vite: ^4.4.8
     vite-plugin-windicss: ^1.9.0
     vue: ^3.3.2
     vue-router: 4
@@ -2275,9 +2275,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.4.7":
-  version: 4.4.7
-  resolution: "vite@npm:4.4.7"
+"vite@npm:^4.4.8":
+  version: 4.4.8
+  resolution: "vite@npm:4.4.8"
   dependencies:
     esbuild: ^0.18.10
     fsevents: ~2.3.2
@@ -2311,7 +2311,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 787c4d891da18d0a0545bee07dec73c3201979dcf2b1ea3dc13fdd2d3b9ad76d413bcc0e68502183e309007a612c1f4116adefe0093d95fbbb9cf1c1755f7e41
+  checksum: e8ffe688f8a7396b1357778f00cb06d1f3dadad200823c47a1955cf52774a0cbff5ac4d6a8f8d09e26c1d4e588e5815956f9eba02ae301e77a36c3d181a1bc86
   languageName: node
   linkType: hard
 
