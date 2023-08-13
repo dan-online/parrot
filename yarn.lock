@@ -427,10 +427,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.17.3":
-  version: 18.17.3
-  resolution: "@types/node@npm:18.17.3"
-  checksum: 884fb68936b2b0ff90863fcf80610dd2f3d9fe1947897248b0138df05fe41ee6ce62941b37b565e3b3fd77601cd3977a64de858654c6ab9064413b171740d6ba
+"@types/node@npm:^18.17.5":
+  version: 18.17.5
+  resolution: "@types/node@npm:18.17.5"
+  checksum: b8c658a99234b99425243c324b641ed7b9ceb6bee6b06421fdc9bb7c58f9a5552e353225cc549e6982462ac384abe1985022ed76e2e4728797f59b21f659ca2b
   languageName: node
   linkType: hard
 
@@ -705,29 +705,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@windicss/config@npm:1.9.0":
-  version: 1.9.0
-  resolution: "@windicss/config@npm:1.9.0"
+"@windicss/config@npm:1.9.1":
+  version: 1.9.1
+  resolution: "@windicss/config@npm:1.9.1"
   dependencies:
     debug: ^4.3.4
     jiti: ^1.18.2
     windicss: ^3.5.6
-  checksum: cfe741ba6e985a057bdd5d1f695ae98935a5ca6fc51ff54381de0cc9aa24e66d8d47de19439406fb294d85b8a46236236fcfc40813509ff3e15cce7bd01e2717
+  checksum: 008ff6c567d607b79f7617ee7975cf930f0a43a9d1b5af6f16969cc38d5f54a8639e438c215c3e1c553fed201fe5f713a73fd244386bbaec0446bbaaf97dc5cd
   languageName: node
   linkType: hard
 
-"@windicss/plugin-utils@npm:1.9.0":
-  version: 1.9.0
-  resolution: "@windicss/plugin-utils@npm:1.9.0"
+"@windicss/plugin-utils@npm:1.9.1":
+  version: 1.9.1
+  resolution: "@windicss/plugin-utils@npm:1.9.1"
   dependencies:
     "@antfu/utils": ^0.7.2
-    "@windicss/config": 1.9.0
+    "@windicss/config": 1.9.1
     debug: ^4.3.4
     fast-glob: ^3.2.12
     magic-string: ^0.30.0
     micromatch: ^4.0.5
     windicss: ^3.5.6
-  checksum: accac0ed77e8aa955acbed08d986fa9eb23df3cf324dcfc2161067007d762780e3783d8327ec316ea4bb895cd64a1b7759ebc2e60a758e40e0e755d797e79fff
+  checksum: d5e46ed29c2fd1de3873cb523e15c8bf6a6dd9b7105dad53d5d5e478ee87d93d52ab7d5ae01966cb935afa156f305b3d00618b4f8e0e5240fec5534eb501a7c5
   languageName: node
   linkType: hard
 
@@ -1827,14 +1827,14 @@ __metadata:
     "@iconify/json": ^2.2.64
     "@tauri-apps/api": ^2.0.0-alpha.3
     "@tauri-apps/cli": ^1.4.0
-    "@types/node": ^18.17.3
+    "@types/node": ^18.17.5
     "@vitejs/plugin-vue": ^4.2.3
     "@vueuse/integrations": ^10.1.2
     fuse.js: ^6.6.2
     typescript: ^5.1.6
     unplugin-icons: ^0.16.1
-    vite: ^4.4.8
-    vite-plugin-windicss: ^1.9.0
+    vite: ^4.4.9
+    vite-plugin-windicss: ^1.9.1
     vue: ^3.3.2
     vue-router: 4
     vue-tsc: ^1.8.8
@@ -1896,7 +1896,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.26":
+"postcss@npm:^8.4.27":
   version: 8.4.27
   resolution: "postcss@npm:8.4.27"
   dependencies:
@@ -1976,9 +1976,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^3.25.2":
-  version: 3.26.2
-  resolution: "rollup@npm:3.26.2"
+"rollup@npm:^3.27.1":
+  version: 3.28.0
+  resolution: "rollup@npm:3.28.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -1986,7 +1986,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 7186beeba0e6fd33b37aa33ede7157e77af0a0be4b75d345a51dab4be5962a8e7a1c5ec8868e7c4cd361b456eb1b47bdb75e5db32ab37a546bed383d06b40384
+  checksum: 6ded4a0d3ca531d68e82897d5eebaa9d085014a062620bc328f2859ccf78d6a148a51ed53f1275a5f89b55cc6d7b1440b7cee44e5a9e3a51442f809b4b26f727
   languageName: node
   linkType: hard
 
@@ -2261,28 +2261,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-windicss@npm:^1.9.0":
-  version: 1.9.0
-  resolution: "vite-plugin-windicss@npm:1.9.0"
+"vite-plugin-windicss@npm:^1.9.1":
+  version: 1.9.1
+  resolution: "vite-plugin-windicss@npm:1.9.1"
   dependencies:
-    "@windicss/plugin-utils": 1.9.0
+    "@windicss/plugin-utils": 1.9.1
     debug: ^4.3.4
     kolorist: ^1.8.0
     windicss: ^3.5.6
   peerDependencies:
     vite: ^2.0.1 || ^3.0.0 || ^4.0.0
-  checksum: fab727ae02c8bbdf272f078c291377b8882c1224226b5d5106d5bbfa13e14c628a403e7b7585491aaba67b7834c1414609b04396641537f532ed85ed39722dea
+  checksum: 317778f9317b7922c37130173c6975bc1eafd0a36a1593091b5d8e538dc7a48b8c16712633248f15e6bcef295dc42bf9cd337bef9bec230765f45ff71e3f8160
   languageName: node
   linkType: hard
 
-"vite@npm:^4.4.8":
-  version: 4.4.8
-  resolution: "vite@npm:4.4.8"
+"vite@npm:^4.4.9":
+  version: 4.4.9
+  resolution: "vite@npm:4.4.9"
   dependencies:
     esbuild: ^0.18.10
     fsevents: ~2.3.2
-    postcss: ^8.4.26
-    rollup: ^3.25.2
+    postcss: ^8.4.27
+    rollup: ^3.27.1
   peerDependencies:
     "@types/node": ">= 14"
     less: "*"
@@ -2311,7 +2311,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: e8ffe688f8a7396b1357778f00cb06d1f3dadad200823c47a1955cf52774a0cbff5ac4d6a8f8d09e26c1d4e588e5815956f9eba02ae301e77a36c3d181a1bc86
+  checksum: c511024ceae39c68c7dbf2ac4381ee655cd7bb62cf43867a14798bc835d3320b8fa7867a336143c30825c191c1fb4e9aa3348fce831ab617e96203080d3d2908
   languageName: node
   linkType: hard
 
