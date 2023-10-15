@@ -309,90 +309,90 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-darwin-arm64@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-darwin-arm64@npm:1.5.1"
+"@tauri-apps/cli-darwin-arm64@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-darwin-arm64@npm:1.5.2"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-darwin-x64@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-darwin-x64@npm:1.5.1"
+"@tauri-apps/cli-darwin-x64@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-darwin-x64@npm:1.5.2"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-linux-arm-gnueabihf@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-linux-arm-gnueabihf@npm:1.5.1"
+"@tauri-apps/cli-linux-arm-gnueabihf@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-linux-arm-gnueabihf@npm:1.5.2"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-linux-arm64-gnu@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-linux-arm64-gnu@npm:1.5.1"
+"@tauri-apps/cli-linux-arm64-gnu@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-linux-arm64-gnu@npm:1.5.2"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-linux-arm64-musl@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-linux-arm64-musl@npm:1.5.1"
+"@tauri-apps/cli-linux-arm64-musl@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-linux-arm64-musl@npm:1.5.2"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-linux-x64-gnu@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-linux-x64-gnu@npm:1.5.1"
+"@tauri-apps/cli-linux-x64-gnu@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-linux-x64-gnu@npm:1.5.2"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-linux-x64-musl@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-linux-x64-musl@npm:1.5.1"
+"@tauri-apps/cli-linux-x64-musl@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-linux-x64-musl@npm:1.5.2"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-win32-arm64-msvc@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-win32-arm64-msvc@npm:1.5.1"
+"@tauri-apps/cli-win32-arm64-msvc@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-win32-arm64-msvc@npm:1.5.2"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-win32-ia32-msvc@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-win32-ia32-msvc@npm:1.5.1"
+"@tauri-apps/cli-win32-ia32-msvc@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-win32-ia32-msvc@npm:1.5.2"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli-win32-x64-msvc@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli-win32-x64-msvc@npm:1.5.1"
+"@tauri-apps/cli-win32-x64-msvc@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli-win32-x64-msvc@npm:1.5.2"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@tauri-apps/cli@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "@tauri-apps/cli@npm:1.5.1"
+"@tauri-apps/cli@npm:^1.5.2":
+  version: 1.5.2
+  resolution: "@tauri-apps/cli@npm:1.5.2"
   dependencies:
-    "@tauri-apps/cli-darwin-arm64": 1.5.1
-    "@tauri-apps/cli-darwin-x64": 1.5.1
-    "@tauri-apps/cli-linux-arm-gnueabihf": 1.5.1
-    "@tauri-apps/cli-linux-arm64-gnu": 1.5.1
-    "@tauri-apps/cli-linux-arm64-musl": 1.5.1
-    "@tauri-apps/cli-linux-x64-gnu": 1.5.1
-    "@tauri-apps/cli-linux-x64-musl": 1.5.1
-    "@tauri-apps/cli-win32-arm64-msvc": 1.5.1
-    "@tauri-apps/cli-win32-ia32-msvc": 1.5.1
-    "@tauri-apps/cli-win32-x64-msvc": 1.5.1
+    "@tauri-apps/cli-darwin-arm64": 1.5.2
+    "@tauri-apps/cli-darwin-x64": 1.5.2
+    "@tauri-apps/cli-linux-arm-gnueabihf": 1.5.2
+    "@tauri-apps/cli-linux-arm64-gnu": 1.5.2
+    "@tauri-apps/cli-linux-arm64-musl": 1.5.2
+    "@tauri-apps/cli-linux-x64-gnu": 1.5.2
+    "@tauri-apps/cli-linux-x64-musl": 1.5.2
+    "@tauri-apps/cli-win32-arm64-msvc": 1.5.2
+    "@tauri-apps/cli-win32-ia32-msvc": 1.5.2
+    "@tauri-apps/cli-win32-x64-msvc": 1.5.2
   dependenciesMeta:
     "@tauri-apps/cli-darwin-arm64":
       optional: true
@@ -416,7 +416,7 @@ __metadata:
       optional: true
   bin:
     tauri: tauri.js
-  checksum: 9ade0491d1ff5a9d1b49f524c8ec56edd86e9c550074ed2f0178d56090690ddc9d07f8ae9b5cb380da13b090277bfbc26ee0224733479b66bec292f292cbec84
+  checksum: 84465dbb90bc902809ac2e43e4f8666c5ad613e750a0e5cca3cc81ed09b699a14a85475c3176cf5cb33d074ef826962bea7479bccc9ffc853dcb5819fb2c1687
   languageName: node
   linkType: hard
 
@@ -427,10 +427,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.18.4":
-  version: 18.18.4
-  resolution: "@types/node@npm:18.18.4"
-  checksum: 4901e91c4cc479bb58acbcd79236a97a0ad6db4a53cb1f4ba4cf32af15324c61b16faa6e31c1b09bf538a20feb5f5274239157ce5237f5741db0b9ab71e69c52
+"@types/node@npm:^18.18.5":
+  version: 18.18.5
+  resolution: "@types/node@npm:18.18.5"
+  checksum: fc8c9b2bf226270cf9085a7dac76ce09dd7c3519ec9b687ee2b50385954ab3709c45ca82d002d1536e24286803cd194d7ab7008acebdcd6681b8b19d4277fa5c
   languageName: node
   linkType: hard
 
@@ -451,30 +451,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@volar/language-core@npm:1.10.3, @volar/language-core@npm:~1.10.3":
-  version: 1.10.3
-  resolution: "@volar/language-core@npm:1.10.3"
+"@volar/language-core@npm:1.10.4, @volar/language-core@npm:~1.10.4":
+  version: 1.10.4
+  resolution: "@volar/language-core@npm:1.10.4"
   dependencies:
-    "@volar/source-map": 1.10.3
-  checksum: 01107efa6bc39d4f94cc5454caf14ab37e377daf7b3b7abbf480f43b2d7eecfeda005cf091dd6a6ed46bd63ac01a5560384c71ed4e05755803198bf6a2d287df
+    "@volar/source-map": 1.10.4
+  checksum: 9e9a010d8fedc11a7408f6e8bcf1f746671ec7dbbfe8ed00e5c0363c077cb074775c6626838829ce77fd02bc1cc3061938cb4fc5267a421b0056f3f8c8c2a7d7
   languageName: node
   linkType: hard
 
-"@volar/source-map@npm:1.10.3, @volar/source-map@npm:~1.10.3":
-  version: 1.10.3
-  resolution: "@volar/source-map@npm:1.10.3"
+"@volar/source-map@npm:1.10.4, @volar/source-map@npm:~1.10.4":
+  version: 1.10.4
+  resolution: "@volar/source-map@npm:1.10.4"
   dependencies:
     muggle-string: ^0.3.1
-  checksum: 439a72208a10e90a1bf5f4fe8066c402a814aef257452513f90169b5b171df2602db67910a2399b96cd2c570184c2d8ec52db0f37450ec1a6b880620dc7cfc42
+  checksum: 03b39d96e955f9953aef25a4776b2ae046d78e752f4c95784f633555fa5ff94072aef5a73cbe3862c2e1f4463c6138b44fad9fb8b1d9cf3bc77be264dec75307
   languageName: node
   linkType: hard
 
-"@volar/typescript@npm:~1.10.3":
-  version: 1.10.3
-  resolution: "@volar/typescript@npm:1.10.3"
+"@volar/typescript@npm:~1.10.4":
+  version: 1.10.4
+  resolution: "@volar/typescript@npm:1.10.4"
   dependencies:
-    "@volar/language-core": 1.10.3
-  checksum: 31fb74c684dabb4920cd986cd9244668cbf8f39a6e31c742b4238e1e57ea90a94c0819acfc0c88e932a417a7f5e7779b80d7b9222cc5da458f0322dbd83b63f5
+    "@volar/language-core": 1.10.4
+  checksum: 528602d520df712eb302fe34a865dfa396b053b118984207f8284eb602a67266ba043c2eadd3af8bcdcf0cd063245c060af8ed0c17df6a74f89f72df9a2a3e4d
   languageName: node
   linkType: hard
 
@@ -535,12 +535,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/language-core@npm:1.8.16":
-  version: 1.8.16
-  resolution: "@vue/language-core@npm:1.8.16"
+"@vue/language-core@npm:1.8.19":
+  version: 1.8.19
+  resolution: "@vue/language-core@npm:1.8.19"
   dependencies:
-    "@volar/language-core": ~1.10.3
-    "@volar/source-map": ~1.10.3
+    "@volar/language-core": ~1.10.4
+    "@volar/source-map": ~1.10.4
     "@vue/compiler-dom": ^3.3.0
     "@vue/reactivity": ^3.3.0
     "@vue/shared": ^3.3.0
@@ -552,7 +552,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: b29f90b409caf82d812f32447da1f82951392d765e8f065496deee90d9491855053d5d38c71fb1f53cee98e74879c40e6cd59b0a3b27086e7777d56a5e4c6f88
+  checksum: f540cde61849786252f2964aeee37f04ec5810c8bca378ff2554c0888e595121b531915b88c5f9cd8d128bf88ae6bda877a57de4e900014c83e224b7a4c8b947
   languageName: node
   linkType: hard
 
@@ -618,13 +618,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/typescript@npm:1.8.16":
-  version: 1.8.16
-  resolution: "@vue/typescript@npm:1.8.16"
+"@vue/typescript@npm:1.8.19":
+  version: 1.8.19
+  resolution: "@vue/typescript@npm:1.8.19"
   dependencies:
-    "@volar/typescript": ~1.10.3
-    "@vue/language-core": 1.8.16
-  checksum: 99bf801245c1ff32aa96b774dfc8d530f778c22556d4e632beb28c06296710b4c34c79bf841e6d1a69349558d67f54bb2c3b6707dcaa5aa4c4a546a297dfac9b
+    "@volar/typescript": ~1.10.4
+    "@vue/language-core": 1.8.19
+  checksum: 52226a298f40b5378ec89387f30f62e4cb46f41c56fb5c6a6bf56ebdae9c735e3ec95bfb33de841fddafd277f6948197327fc6fd3b50881b8ea6b6d5cc65b3d4
   languageName: node
   linkType: hard
 
@@ -1826,8 +1826,8 @@ __metadata:
   dependencies:
     "@iconify/json": ^2.2.64
     "@tauri-apps/api": ^2.0.0-alpha.3
-    "@tauri-apps/cli": ^1.5.1
-    "@types/node": ^18.18.4
+    "@tauri-apps/cli": ^1.5.2
+    "@types/node": ^18.18.5
     "@vitejs/plugin-vue": ^4.4.0
     "@vueuse/integrations": ^10.1.2
     fuse.js: ^6.6.2
@@ -1837,7 +1837,7 @@ __metadata:
     vite-plugin-windicss: ^1.9.1
     vue: ^3.3.2
     vue-router: 4
-    vue-tsc: ^1.8.16
+    vue-tsc: ^1.8.19
     vue-virtual-scroller: ^2.0.0-beta.8
     windicss: ^3.5.6
   languageName: unknown
@@ -2370,18 +2370,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-tsc@npm:^1.8.16":
-  version: 1.8.16
-  resolution: "vue-tsc@npm:1.8.16"
+"vue-tsc@npm:^1.8.19":
+  version: 1.8.19
+  resolution: "vue-tsc@npm:1.8.19"
   dependencies:
-    "@vue/language-core": 1.8.16
-    "@vue/typescript": 1.8.16
+    "@vue/language-core": 1.8.19
+    "@vue/typescript": 1.8.19
     semver: ^7.5.4
   peerDependencies:
     typescript: "*"
   bin:
     vue-tsc: bin/vue-tsc.js
-  checksum: 48b46d0c5be697af8845e4ea92079503795578427db3011bd314d9e93511aa3e5d9d4bdcbb70afae101f986aed234f538243232c92d270ddb768d51629eb173f
+  checksum: 0d5e9d2a06a3643a1a1f4d5421bec6e40c4948be3b6517e0d88f142292772a090393c8986de72d245e8b050393286d4227f110470359ca19f875bff0c62a2b3d
   languageName: node
   linkType: hard
 
