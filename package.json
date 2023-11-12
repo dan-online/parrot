@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.5.6",
-    "@types/node": "^20.8.10",
-    "@vitejs/plugin-vue": "^4.4.0",
+    "@types/node": "^20.9.0",
+    "@vitejs/plugin-vue": "^4.4.1",
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
     "vite-plugin-windicss": "^1.9.1",
