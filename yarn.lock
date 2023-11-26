@@ -511,12 +511,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.9.2":
-  version: 20.9.2
-  resolution: "@types/node@npm:20.9.2"
+"@types/node@npm:^20.10.0":
+  version: 20.10.0
+  resolution: "@types/node@npm:20.10.0"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 891a035a5b7796001f5daaec03b2d84ebb67d731b67abb34c352af1b5b1f53beb4a92f0f6a66f6e0ed97191c3022cc8c830e048f8a5c53806e8ab248873a7c7b
+  checksum: f379e57d9d28cb5f3d8eab943de0c54a0ca2f95ee356e1fe2a1a4fa718b740103ae522c50ce107cffd52c3642ef3244cfc55bf5369081dd6c48369c8587b21ae
   languageName: node
   linkType: hard
 
@@ -782,29 +782,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@windicss/config@npm:1.9.1":
-  version: 1.9.1
-  resolution: "@windicss/config@npm:1.9.1"
+"@windicss/config@npm:1.9.2":
+  version: 1.9.2
+  resolution: "@windicss/config@npm:1.9.2"
   dependencies:
     debug: "npm:^4.3.4"
     jiti: "npm:^1.18.2"
     windicss: "npm:^3.5.6"
-  checksum: 8/008ff6c567d607b79f7617ee7975cf930f0a43a9d1b5af6f16969cc38d5f54a8639e438c215c3e1c553fed201fe5f713a73fd244386bbaec0446bbaaf97dc5cd
+  checksum: 093a0d27639d4e92ae1d807da1cdf872e017397bda997df2eb743089c090b3434542602261b1199d58b28452a045f6b38dab15ea268e56af03d91bb846775960
   languageName: node
   linkType: hard
 
-"@windicss/plugin-utils@npm:1.9.1":
-  version: 1.9.1
-  resolution: "@windicss/plugin-utils@npm:1.9.1"
+"@windicss/plugin-utils@npm:1.9.2":
+  version: 1.9.2
+  resolution: "@windicss/plugin-utils@npm:1.9.2"
   dependencies:
     "@antfu/utils": "npm:^0.7.2"
-    "@windicss/config": "npm:1.9.1"
+    "@windicss/config": "npm:1.9.2"
     debug: "npm:^4.3.4"
     fast-glob: "npm:^3.2.12"
     magic-string: "npm:^0.30.0"
     micromatch: "npm:^4.0.5"
     windicss: "npm:^3.5.6"
-  checksum: 8/d5e46ed29c2fd1de3873cb523e15c8bf6a6dd9b7105dad53d5d5e478ee87d93d52ab7d5ae01966cb935afa156f305b3d00618b4f8e0e5240fec5534eb501a7c5
+  checksum: ff26cf079654b0808c1375373cb95b880e1f2635d806c29d9e7b1d9d90edbe99629a507b7d74e687fbf11349f5fe51b3845d1df4fa29418dc9a46d60e36c7bc6
   languageName: node
   linkType: hard
 
@@ -1930,14 +1930,14 @@ __metadata:
     "@iconify/json": "npm:^2.2.64"
     "@tauri-apps/api": "npm:^2.0.0-alpha.3"
     "@tauri-apps/cli": "npm:^1.5.6"
-    "@types/node": "npm:^20.9.2"
+    "@types/node": "npm:^20.10.0"
     "@vitejs/plugin-vue": "npm:^4.5.0"
     "@vueuse/integrations": "npm:^10.1.2"
     fuse.js: "npm:^6.6.2"
-    typescript: "npm:^5.2.2"
+    typescript: "npm:^5.3.2"
     unplugin-icons: "npm:^0.16.1"
-    vite: "npm:^5.0.0"
-    vite-plugin-windicss: "npm:^1.9.1"
+    vite: "npm:^5.0.2"
+    vite-plugin-windicss: "npm:^1.9.2"
     vue: "npm:^3.3.2"
     vue-router: "npm:4"
     vue-tsc: "npm:^1.8.22"
@@ -2321,23 +2321,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.2.2":
-  version: 5.2.2
-  resolution: "typescript@npm:5.2.2"
+"typescript@npm:^5.3.2":
+  version: 5.3.2
+  resolution: "typescript@npm:5.3.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 8/7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
+  checksum: d7dbe1fbe19039e36a65468ea64b5d338c976550394ba576b7af9c68ed40c0bc5d12ecce390e4b94b287a09a71bd3229f19c2d5680611f35b7c53a3898791159
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>":
-  version: 5.2.2
-  resolution: "typescript@patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"
+"typescript@patch:typescript@npm%3A^5.3.2#optional!builtin<compat/typescript>":
+  version: 5.3.2
+  resolution: "typescript@patch:typescript@npm%3A5.3.2#optional!builtin<compat/typescript>::version=5.3.2&hash=e012d7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/f79cc2ba802c94c2b78dbb00d767a10adb67368ae764709737dc277273ec148aa4558033a03ce901406b35fddf4eac46dabc94a1e1d12d2587e2b9cfe5707b4a
+  checksum: 73c8bad74e732d93211c9d77f28b03307e2f5fc6a0afc73f4b783261ab567686a16d6ae958bdaef383a00be1b0b8c8b6741dd6ca3d13af4963fa7e47456d49c7
   languageName: node
   linkType: hard
 
@@ -2414,23 +2414,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-windicss@npm:^1.9.1":
-  version: 1.9.1
-  resolution: "vite-plugin-windicss@npm:1.9.1"
+"vite-plugin-windicss@npm:^1.9.2":
+  version: 1.9.2
+  resolution: "vite-plugin-windicss@npm:1.9.2"
   dependencies:
-    "@windicss/plugin-utils": "npm:1.9.1"
+    "@windicss/plugin-utils": "npm:1.9.2"
     debug: "npm:^4.3.4"
     kolorist: "npm:^1.8.0"
     windicss: "npm:^3.5.6"
   peerDependencies:
-    vite: ^2.0.1 || ^3.0.0 || ^4.0.0
-  checksum: 8/317778f9317b7922c37130173c6975bc1eafd0a36a1593091b5d8e538dc7a48b8c16712633248f15e6bcef295dc42bf9cd337bef9bec230765f45ff71e3f8160
+    vite: ^2.0.1 || ^3.0.0 || ^4.0.0 || ^5.0.0
+  checksum: e521e1660e66b36deac4b4dc6a7514dde53a10b6ae0f14ab4959619c77137ffdb1f17489a8cf2804d4467028823b8337be78e522b8e1bfe2088497e9634c71dc
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "vite@npm:5.0.0"
+"vite@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "vite@npm:5.0.2"
   dependencies:
     esbuild: "npm:^0.19.3"
     fsevents: "npm:~2.3.3"
@@ -2464,7 +2464,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 357fef1558d21fcdcc667d99c87b95220f3a3eb7c83cd49bbb57d4be775a1b9a96c6ed53b4e01534510d9005245cf0dd8bc40b9aeed73458e46079a18a27b74f
+  checksum: e596706cd3775e2300552364844b07024b5455eac03c822d681416dd981439176c397714c4ae91576d3641f812032488bd0e7ebdda50a7e776457a1a05c80db3
   languageName: node
   linkType: hard
 
