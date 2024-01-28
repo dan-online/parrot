@@ -511,12 +511,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.11.5":
-  version: 20.11.5
-  resolution: "@types/node@npm:20.11.5"
+"@types/node@npm:^20.11.8":
+  version: 20.11.8
+  resolution: "@types/node@npm:20.11.8"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 6d18cec852f5cfbed3ec42b5c01c026e7a3f9da540d6e3d6738d4cee9979fb308cf27b6df7ba40a6553e7bc82e678f0ef53ba6e6ad52e5b86bd97b7783c2a42c
+  checksum: cd4eff91ff2291b909cf8ce81f3117effcfd59c435a9d42a9a085f5de8f414eabfbe4558f53a275eedc280a97393d71084812d91cf31fba436a01369d80133b5
   languageName: node
   linkType: hard
 
@@ -1940,7 +1940,7 @@ __metadata:
     "@iconify/json": "npm:^2.2.64"
     "@tauri-apps/api": "npm:^2.0.0-alpha.3"
     "@tauri-apps/cli": "npm:^1.5.9"
-    "@types/node": "npm:^20.11.5"
+    "@types/node": "npm:^20.11.8"
     "@vitejs/plugin-vue": "npm:^5.0.3"
     "@vueuse/integrations": "npm:^10.1.2"
     fuse.js: "npm:^6.6.2"
