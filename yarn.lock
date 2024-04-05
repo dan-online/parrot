@@ -240,13 +240,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/json@npm:^2.2.195":
-  version: 2.2.195
-  resolution: "@iconify/json@npm:2.2.195"
+"@iconify/json@npm:^2.2.197":
+  version: 2.2.197
+  resolution: "@iconify/json@npm:2.2.197"
   dependencies:
     "@iconify/types": "npm:*"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/9f824aba343b018c6eaa7b938740a74f59ec2887501a8d533a7ed58d3e81528d74c71f47a48511f1dfa01b84689752284f5a1162d1ad3dc02ae269bf79c83798
+  checksum: 10c0/06aaedb453a9c947c28b07b72d368eeb6bc941c933f869417e5f9d0d95271ab39cfa584990f8203830d491f392929db5ff194dea3f2a08756f91a3d8054f569c
   languageName: node
   linkType: hard
 
@@ -424,10 +424,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tauri-apps/api@npm:^2.0.0-beta.6":
-  version: 2.0.0-beta.6
-  resolution: "@tauri-apps/api@npm:2.0.0-beta.6"
-  checksum: 10c0/f825e355386dc34c1b051aecdf5c1c327c1dbc9a4c71f1f95b2182d38a45ddcfc4e6e7eca3ccfb42fcb96ae1d98c9c3b805f57a228572ed47e4ed608f01f3181
+"@tauri-apps/api@npm:^2.0.0-beta.7":
+  version: 2.0.0-beta.7
+  resolution: "@tauri-apps/api@npm:2.0.0-beta.7"
+  checksum: 10c0/52106eaf0ce13552a22c750024e711a170418d98f7f891ba655e9908e855dedc4f5401f2719a5eba9e865fb096482765bd60342be84fb673add7c3cac80381eb
   languageName: node
   linkType: hard
 
@@ -2055,8 +2055,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parrot@workspace:."
   dependencies:
-    "@iconify/json": "npm:^2.2.195"
-    "@tauri-apps/api": "npm:^2.0.0-beta.6"
+    "@iconify/json": "npm:^2.2.197"
+    "@tauri-apps/api": "npm:^2.0.0-beta.7"
     "@tauri-apps/cli": "npm:^1.5.11"
     "@types/node": "npm:^20.11.30"
     "@vitejs/plugin-vue": "npm:^5.0.4"
