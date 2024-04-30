@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Fuse from "fuse.js";
+import Fuse, { FuseResult } from "fuse.js";
 import { nextTick, onBeforeUnmount, ref } from "vue";
 import { useFuse } from '@vueuse/integrations/useFuse'
 import { useRoute, useRouter } from "vue-router";
@@ -21,7 +21,7 @@ const query = ref(route.query.q as string || "");
 const local = ref(false);
 const loading = ref(false);
 
-let results = ref<Fuse.FuseResult<SearchInfo>[]>([]);
+let results = ref<FuseResult<SearchInfo>[]>([]);
 
 async function search() {
     loading.value = true;
