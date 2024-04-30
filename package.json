@@ -20,14 +20,14 @@
     "vue-virtual-scroller": "^2.0.0-beta.8"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.5.11",
+    "@tauri-apps/cli": "^1.5.12",
     "@types/node": "^20.12.7",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/compiler-sfc": "^3.4.26",
     "typescript": "^5.4.5",
-    "vite": "^5.2.9",
+    "vite": "^5.2.10",
     "vite-plugin-windicss": "^1.9.3",
-    "vue-tsc": "^2.0.13",
+    "vue-tsc": "^2.0.15",
     "windicss": "^3.5.6"
   },
   "packageManager": "yarn@4.1.1"
