@@ -10,7 +10,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.215",
+    "@iconify/json": "^2.2.217",
     "@tauri-apps/api": "^1.5.5",
     "@vueuse/integrations": "^10.10.0",
     "fuse.js": "^7.0.0",
