@@ -577,12 +577,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.14.8":
-  version: 20.14.8
-  resolution: "@types/node@npm:20.14.8"
+"@types/node@npm:^20.14.9":
+  version: 20.14.9
+  resolution: "@types/node@npm:20.14.9"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10c0/06d4643fa3b179b41fe19f9c75c240278ca1f7a313b3b837bc36ea119499c7ad77f06bbe72694ac04aa91ec77fe747baa09b889f4c435450c1724a26bd55f160
+  checksum: 10c0/911ffa444dc032897f4a23ed580c67903bd38ea1c5ec99b1d00fa10b83537a3adddef8e1f29710cbdd8e556a61407ed008e06537d834e48caf449ce59f87d387
   languageName: node
   linkType: hard
 
@@ -643,19 +643,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-core@npm:3.4.30":
-  version: 3.4.30
-  resolution: "@vue/compiler-core@npm:3.4.30"
-  dependencies:
-    "@babel/parser": "npm:^7.24.7"
-    "@vue/shared": "npm:3.4.30"
-    entities: "npm:^4.5.0"
-    estree-walker: "npm:^2.0.2"
-    source-map-js: "npm:^1.2.0"
-  checksum: 10c0/f0109b472d9ecb7ee13b8eb7bce3fdbaaec1a185a125589abe2805409180a97731552fb2bde31694b896b2d41baf3429e68547ed31751d60233b1e802dc7d9f9
-  languageName: node
-  linkType: hard
-
 "@vue/compiler-core@npm:3.4.31":
   version: 3.4.31
   resolution: "@vue/compiler-core@npm:3.4.31"
@@ -666,16 +653,6 @@ __metadata:
     estree-walker: "npm:^2.0.2"
     source-map-js: "npm:^1.2.0"
   checksum: 10c0/17833fa55af0168da4ec79b1233aba2bf6df9a88cd95be513a122f3433901e70284ce467a504a36547debdf49f887cf807734360a7660fd8f7622bf15c74b01d
-  languageName: node
-  linkType: hard
-
-"@vue/compiler-dom@npm:3.4.30":
-  version: 3.4.30
-  resolution: "@vue/compiler-dom@npm:3.4.30"
-  dependencies:
-    "@vue/compiler-core": "npm:3.4.30"
-    "@vue/shared": "npm:3.4.30"
-  checksum: 10c0/b975fcb1a6a2987eb40c4c127aa68159aa1af27d824361b7b4814505a0d69027139539e236b24f3f1857cb16a57b2eef96f5e566beb39e16ea2537912ffe5965
   languageName: node
   linkType: hard
 
@@ -699,7 +676,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-sfc@npm:3.4.31":
+"@vue/compiler-sfc@npm:3.4.31, @vue/compiler-sfc@npm:^3.4.31":
   version: 3.4.31
   resolution: "@vue/compiler-sfc@npm:3.4.31"
   dependencies:
@@ -713,33 +690,6 @@ __metadata:
     postcss: "npm:^8.4.38"
     source-map-js: "npm:^1.2.0"
   checksum: 10c0/b8983a52dd3d5d7f9640dbda5946f01fcb92213a6c3a9a76d1df8f67fd43c59402ab6ff4211a205bf91155c4cd2a45fb39c36a83199bc1256eaeb9f690895b73
-  languageName: node
-  linkType: hard
-
-"@vue/compiler-sfc@npm:^3.4.30":
-  version: 3.4.30
-  resolution: "@vue/compiler-sfc@npm:3.4.30"
-  dependencies:
-    "@babel/parser": "npm:^7.24.7"
-    "@vue/compiler-core": "npm:3.4.30"
-    "@vue/compiler-dom": "npm:3.4.30"
-    "@vue/compiler-ssr": "npm:3.4.30"
-    "@vue/shared": "npm:3.4.30"
-    estree-walker: "npm:^2.0.2"
-    magic-string: "npm:^0.30.10"
-    postcss: "npm:^8.4.38"
-    source-map-js: "npm:^1.2.0"
-  checksum: 10c0/63b09e7d9d34e4a4c48d924629c03d979aba73e9b139d8eccf7c1a6c2db743eb1c4b72cf5326bc6a1c885f886be2c6493bb4d24d147d329a6c8d5c9ba5c51610
-  languageName: node
-  linkType: hard
-
-"@vue/compiler-ssr@npm:3.4.30":
-  version: 3.4.30
-  resolution: "@vue/compiler-ssr@npm:3.4.30"
-  dependencies:
-    "@vue/compiler-dom": "npm:3.4.30"
-    "@vue/shared": "npm:3.4.30"
-  checksum: 10c0/f7ba4bde96ad2e54207e3a47b86078c10ae2bf45a322214175c7d9cd3f1cc0d4a67ed91178000ff5dd600e884a4ecb8dcdec98b080b3408d451f77faa4cc68c6
   languageName: node
   linkType: hard
 
@@ -828,13 +778,6 @@ __metadata:
   version: 3.4.21
   resolution: "@vue/shared@npm:3.4.21"
   checksum: 10c0/79cba4228c3c1769ba8024302d7dbebf6ed1b77fb2e7a69e635cdebaa1c18b409e9c27ce27ccbe3a98e702a7e2dae1b87754d87f0b29adfe2a8f9e1e7c7899d5
-  languageName: node
-  linkType: hard
-
-"@vue/shared@npm:3.4.30":
-  version: 3.4.30
-  resolution: "@vue/shared@npm:3.4.30"
-  checksum: 10c0/39e128f9b2a53175b21f70f69ef038905a9c2d7fe4b5bd07f571d45fcab8ba3d037fa6bed98598ebaf7d568df44e435af98d14b3aa2f1b1a9b3d9c26b00d674d
   languageName: node
   linkType: hard
 
@@ -2130,14 +2073,14 @@ __metadata:
     "@iconify/json": "npm:^2.2.223"
     "@tauri-apps/api": "npm:^1.5.5"
     "@tauri-apps/cli": "npm:^1.5.14"
-    "@types/node": "npm:^20.14.8"
+    "@types/node": "npm:^20.14.9"
     "@vitejs/plugin-vue": "npm:^5.0.5"
-    "@vue/compiler-sfc": "npm:^3.4.30"
+    "@vue/compiler-sfc": "npm:^3.4.31"
     "@vueuse/integrations": "npm:^10.11.0"
     fuse.js: "npm:^7.0.0"
     typescript: "npm:^5.5.2"
     unplugin-icons: "npm:^0.19.0"
-    vite: "npm:^5.3.1"
+    vite: "npm:^5.3.2"
     vite-plugin-windicss: "npm:^1.9.3"
     vue: "npm:^3.4.31"
     vue-router: "npm:4.4.0"
@@ -2675,9 +2618,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.3.1":
-  version: 5.3.1
-  resolution: "vite@npm:5.3.1"
+"vite@npm:^5.3.2":
+  version: 5.3.2
+  resolution: "vite@npm:5.3.2"
   dependencies:
     esbuild: "npm:^0.21.3"
     fsevents: "npm:~2.3.3"
@@ -2711,7 +2654,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/9317262c02ea2dc324dfdbc20c3c450cd89cc9a16399a41a4bf820a3a1f31cf400878c015135e355ee034853cc2399b5499899d5b1bc462d57642d71083e74b6
+  checksum: 10c0/3ed576d18c6c008ae92be68f9c79bf7556dae10978a3e8b4c4b42199424755e5c99836e6d4f81fb8b533b957d7f4e351abc60b8a93f4c4b5eb9890b5b6450926
   languageName: node
   linkType: hard
 
