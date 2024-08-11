@@ -21,11 +21,11 @@
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.6.0",
-    "@types/node": "^20.14.14",
+    "@types/node": "^20.14.15",
     "@vitejs/plugin-vue": "^5.1.2",
-    "@vue/compiler-sfc": "^3.4.35",
+    "@vue/compiler-sfc": "^3.4.37",
     "typescript": "^5.5.4",
-    "vite": "^5.3.5",
+    "vite": "^5.4.0",
     "vite-plugin-windicss": "^1.9.3",
     "vue-tsc": "^2.0.29",
     "windicss": "^3.5.6"
