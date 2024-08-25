@@ -30,5 +30,5 @@
     "vue-tsc": "^2.0.29",
     "windicss": "^3.5.6"
   },
-  "packageManager": "yarn@4.4.0"
+  "packageManager": "yarn@4.4.1"
 }
