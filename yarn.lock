@@ -249,13 +249,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/json@npm:^2.2.242":
-  version: 2.2.242
-  resolution: "@iconify/json@npm:2.2.242"
+"@iconify/json@npm:^2.2.243":
+  version: 2.2.243
+  resolution: "@iconify/json@npm:2.2.243"
   dependencies:
     "@iconify/types": "npm:*"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/b8ca35b6eefc098bf90340b166a140a6e27ab7419906d39834ed0d69469988aa338069e38576de3f212934cdf4ddb920ad189823ddbb68d92acc49b516957bc3
+  checksum: 10c0/a63ccaf82833501a6014745f386354a1d3b8bb5be5c8bf76f94e3b31573682de2145a5c0035b8691db8b344f776180d28ef7b940b0fc32230ab7762699ea5d1c
   languageName: node
   linkType: hard
 
@@ -2122,7 +2122,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parrot@workspace:."
   dependencies:
-    "@iconify/json": "npm:^2.2.242"
+    "@iconify/json": "npm:^2.2.243"
     "@tauri-apps/api": "npm:^1.6.0"
     "@tauri-apps/cli": "npm:^1.6.1"
     "@types/node": "npm:^20.16.2"
