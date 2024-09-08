@@ -10,12 +10,12 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.243",
+    "@iconify/json": "^2.2.245",
     "@tauri-apps/api": "^1.6.0",
     "@vueuse/integrations": "^11.0.3",
     "fuse.js": "^7.0.0",
-    "unplugin-icons": "^0.19.2",
-    "vue": "^3.4.38",
+    "unplugin-icons": "^0.19.3",
+    "vue": "^3.5.3",
     "vue-router": "4.4.3",
     "vue-virtual-scroller": "^2.0.0-beta.8"
   },
