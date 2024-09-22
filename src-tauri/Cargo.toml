@@ -17,7 +17,7 @@ tauri = { version = "1.6.2", features = ["reqwest-native-tls-vendored", "shell-o
 serde = { version = "1.0.200", features = ["derive"] }
 serde_json = "1.0"
 reqwest = { version = "0.12.4",  features = ["blocking", "json"] }
-ts-rs = "9.0"
+ts-rs = "10.0"
 scraper = "0.20.0"
 sled = "0.34.7"
 zstd = "0.13.1"
