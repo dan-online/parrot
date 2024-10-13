@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@iconify/json": "^2.2.259",
-    "@tauri-apps/api": "^1.6.0",
+    "@tauri-apps/api": "^2.0.2",
     "@vueuse/integrations": "^11.1.0",
     "fuse.js": "^7.0.0",
     "unplugin-icons": "^0.19.3",
