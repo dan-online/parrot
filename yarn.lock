@@ -614,12 +614,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.16.11":
-  version: 20.16.11
-  resolution: "@types/node@npm:20.16.11"
+"@types/node@npm:^20.16.13":
+  version: 20.16.13
+  resolution: "@types/node@npm:20.16.13"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10c0/bba43f447c3c80548513954dae174e18132e9149d572c09df4a282772960d33e229d05680fb5364997c03489c22fe377d1dbcd018a3d4ff1cfbcfcdaa594a9c3
+  checksum: 10c0/7f4fd7176db0802c62e11ebbf7a66d0248e2dc8ec9153d9fc8bcb164d9aed581d91c407046c823c522e60d0babfdc24a1618dba7f2c6920ef1a24e1d416c9550
   languageName: node
   linkType: hard
 
@@ -2141,14 +2141,14 @@ __metadata:
     "@iconify/json": "npm:^2.2.259"
     "@tauri-apps/api": "npm:^2.0.2"
     "@tauri-apps/cli": "npm:^2.0.3"
-    "@types/node": "npm:^20.16.11"
+    "@types/node": "npm:^20.16.13"
     "@vitejs/plugin-vue": "npm:^5.1.4"
     "@vue/compiler-sfc": "npm:^3.5.12"
     "@vueuse/integrations": "npm:^11.1.0"
     fuse.js: "npm:^7.0.0"
     typescript: "npm:^5.6.3"
     unplugin-icons: "npm:^0.19.3"
-    vite: "npm:^5.4.8"
+    vite: "npm:^5.4.9"
     vite-plugin-windicss: "npm:^1.9.3"
     vue: "npm:^3.5.12"
     vue-router: "npm:4.4.5"
@@ -2713,9 +2713,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.4.8":
-  version: 5.4.8
-  resolution: "vite@npm:5.4.8"
+"vite@npm:^5.4.9":
+  version: 5.4.9
+  resolution: "vite@npm:5.4.9"
   dependencies:
     esbuild: "npm:^0.21.3"
     fsevents: "npm:~2.3.3"
@@ -2752,7 +2752,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/af70af6d6316a3af71f44ebe3ab343bd66450d4157af73af3b32239e1b6ec43ff6f651d7cc4193b21ed3bff2e9356a3de9e96aee53857f39922e4a2d9fad75a1
+  checksum: 10c0/e9c59f2c639047e37c79bbbb151c7a55a3dc27932957cf4cf0447ee0bdcc1ddfd9b1fb3ba0465371c01ba3616d62561327855794c2d652213c3a10a32e6d369d
   languageName: node
   linkType: hard
 
