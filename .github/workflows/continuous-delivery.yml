@@ -15,7 +15,7 @@ jobs:
 
     runs-on: ${{ matrix.platform }}
     steps:
-      - uses: actions/checkout@v4.2.1
+      - uses: actions/checkout@v4.2.2
         with:
           ref: ${{ github.event.release.tag_name }}
 
@@ -29,7 +29,7 @@ jobs:
         uses: josh-development/.github/setup-node@main
 
       - name: Restore Cargo Cache
-        uses: actions/cache@v4.1.1
+        uses: actions/cache@v4.1.2
         with:
           path: |
             ~/.cargo/registry/index/
