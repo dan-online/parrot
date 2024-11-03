@@ -243,13 +243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/json@npm:^2.2.264":
-  version: 2.2.264
-  resolution: "@iconify/json@npm:2.2.264"
+"@iconify/json@npm:^2.2.267":
+  version: 2.2.267
+  resolution: "@iconify/json@npm:2.2.267"
   dependencies:
     "@iconify/types": "npm:*"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/b4de9c24df26240840aef7ced97f1de5ddbf2f5d54fc6a7fa4c429293e878fb4b1ff3c4c47a595bc6fadd20df429c088d53959a051f7aa7099ee0c3a0a9b9ed8
+  checksum: 10c0/9deafedbf2d0bf74f56359477327e2d92994604b3db2f4de5c23a79240d2872e7d5adcb815ac364df1a4cc62c9fcf81459811e2f53827b6aae55da6f5aa56d14
   languageName: node
   linkType: hard
 
@@ -771,24 +771,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@vueuse/core@npm:11.1.0"
+"@vueuse/core@npm:11.2.0":
+  version: 11.2.0
+  resolution: "@vueuse/core@npm:11.2.0"
   dependencies:
     "@types/web-bluetooth": "npm:^0.0.20"
-    "@vueuse/metadata": "npm:11.1.0"
-    "@vueuse/shared": "npm:11.1.0"
+    "@vueuse/metadata": "npm:11.2.0"
+    "@vueuse/shared": "npm:11.2.0"
     vue-demi: "npm:>=0.14.10"
-  checksum: 10c0/ecbeb277de81608c78aa4ebc7e4cae8a6d5f0650e2ee5ed71bf387676df4725bd2e8bcfeadcc0798ab6850e6317ff79822ef32adef4646184086764fe7f684ac
+  checksum: 10c0/d4ac9abef8680a521c160c387922fa98e7cb2f7cbc43d647a0c9eaa654bb72581b4e53fe8452ce8520b2a600b657c252ac87d09eafd4736ed0ae1a3c9c91c8e1
   languageName: node
   linkType: hard
 
-"@vueuse/integrations@npm:^11.1.0":
-  version: 11.1.0
-  resolution: "@vueuse/integrations@npm:11.1.0"
+"@vueuse/integrations@npm:^11.2.0":
+  version: 11.2.0
+  resolution: "@vueuse/integrations@npm:11.2.0"
   dependencies:
-    "@vueuse/core": "npm:11.1.0"
-    "@vueuse/shared": "npm:11.1.0"
+    "@vueuse/core": "npm:11.2.0"
+    "@vueuse/shared": "npm:11.2.0"
     vue-demi: "npm:>=0.14.10"
   peerDependencies:
     async-validator: ^4
@@ -828,23 +828,23 @@ __metadata:
       optional: true
     universal-cookie:
       optional: true
-  checksum: 10c0/77d6d021a6f8524270ebfc8cfebc22d60b19fca4fea25d18a90b38aa63055e8654230064726f822f3899101ab676738c66ece5e5ffe70ec6df228dbfaa46e581
+  checksum: 10c0/4fd6e02502db2afe0df41fac1b0c297aac7ba387e0831c9ea621b4ee7c443c0511dc2d3703452eb10e8ba639513e42ffbf09c5a0d059435a1563b68c4eca0a72
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@vueuse/metadata@npm:11.1.0"
-  checksum: 10c0/5063d8b81c31e3c7ea24ff7fad0d0ec43a951540066329f36daf96fc0e8780ed902282d36c6df856288f07d0c5edb525f551cf9e8b84837782e2ac0a1988c498
+"@vueuse/metadata@npm:11.2.0":
+  version: 11.2.0
+  resolution: "@vueuse/metadata@npm:11.2.0"
+  checksum: 10c0/a6f6b734d7237e9e80d005f3cd566141153cf2f59011c57396517a5d448857ecda792c910cde0401f7d524f0f693608616af30fd0f70e867a25f9b0d768a8fb4
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@vueuse/shared@npm:11.1.0"
+"@vueuse/shared@npm:11.2.0":
+  version: 11.2.0
+  resolution: "@vueuse/shared@npm:11.2.0"
   dependencies:
     vue-demi: "npm:>=0.14.10"
-  checksum: 10c0/ed9a4625537825fe783c66823592560696604f5301e8dcef12dda3a816b85334e7c70ccbaaf1c0c62ea2b8efcce58893b780210162374d2e9bc1e4c5889e066b
+  checksum: 10c0/24c8b4ffb7e1d253f67cb19736926707b5c1b18901b1cd71c075f22495c3382b845253185d2c8986b4a86a17bf637dac01317d68a044cc712621221d278f23ff
   languageName: node
   linkType: hard
 
@@ -2074,16 +2074,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parrot@workspace:."
   dependencies:
-    "@iconify/json": "npm:^2.2.264"
+    "@iconify/json": "npm:^2.2.267"
     "@tauri-apps/api": "npm:^2.0.3"
     "@tauri-apps/cli": "npm:^2.0.4"
     "@types/node": "npm:^22.8.7"
     "@vitejs/plugin-vue": "npm:^5.1.4"
     "@vue/compiler-sfc": "npm:^3.5.12"
-    "@vueuse/integrations": "npm:^11.1.0"
+    "@vueuse/integrations": "npm:^11.2.0"
     fuse.js: "npm:^7.0.0"
     typescript: "npm:^5.6.3"
-    unplugin-icons: "npm:^0.19.3"
+    unplugin-icons: "npm:^0.20.0"
     vite: "npm:^5.4.10"
     vite-plugin-windicss: "npm:^1.9.3"
     vue: "npm:^3.5.12"
@@ -2577,9 +2577,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-icons@npm:^0.19.3":
-  version: 0.19.3
-  resolution: "unplugin-icons@npm:0.19.3"
+"unplugin-icons@npm:^0.20.0":
+  version: 0.20.0
+  resolution: "unplugin-icons@npm:0.20.0"
   dependencies:
     "@antfu/install-pkg": "npm:^0.4.1"
     "@antfu/utils": "npm:^0.7.10"
@@ -2592,6 +2592,7 @@ __metadata:
     "@svgr/core": ">=7.0.0"
     "@svgx/core": ^1.0.1
     "@vue/compiler-sfc": ^3.0.2 || ^2.7.0
+    svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
     vue-template-compiler: ^2.6.12
     vue-template-es2015-compiler: ^1.9.0
   peerDependenciesMeta:
@@ -2601,11 +2602,13 @@ __metadata:
       optional: true
     "@vue/compiler-sfc":
       optional: true
+    svelte:
+      optional: true
     vue-template-compiler:
       optional: true
     vue-template-es2015-compiler:
       optional: true
-  checksum: 10c0/a0dec74a52b2a148cd1fae9ba80c6229d6d5070cf219e023d7e1b0784d515566c29b257c2be9377604d9a5c6aeadd277cf8654d47cd91f90890014281df9d71f
+  checksum: 10c0/d885dead9dd2b28d567812f5d8a7788469df063d59f6ce108ed3cb6f4b3d4006da0b0fc0712fc473bd37c0b46facbe261e042add08cc6673e8309e4ee3e7d8cb
   languageName: node
   linkType: hard
 
