@@ -580,12 +580,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.17.1":
-  version: 20.17.1
-  resolution: "@types/node@npm:20.17.1"
+"@types/node@npm:^20.17.5":
+  version: 20.17.5
+  resolution: "@types/node@npm:20.17.5"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10c0/214cf1fffff9c80ae0d49d7dd1f04254215d49711276fff44ff6f61e36dc8d53520509a88add6955fe029b2259c87eaf284b43bc1236d4f4f06bd80c46f0e2b8
+  checksum: 10c0/6e6bf7f84365a2ee95a369c48cdb47a93aae2b5029d19660183ba944d7bdbc193e54167076d64a3a11ff28e307b84c90eda350edf8e2029195d1fc27ae6055f4
   languageName: node
   linkType: hard
 
@@ -700,9 +700,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/language-core@npm:2.1.8":
-  version: 2.1.8
-  resolution: "@vue/language-core@npm:2.1.8"
+"@vue/language-core@npm:2.1.10":
+  version: 2.1.10
+  resolution: "@vue/language-core@npm:2.1.10"
   dependencies:
     "@volar/language-core": "npm:~2.4.8"
     "@vue/compiler-dom": "npm:^3.5.0"
@@ -717,7 +717,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/5106e5961438c33db7e11c2f2369320989d31550a616d636b680ae05c1a91f9fe332fee4aa78c6f9b7f416e8fda893ffa0f3ebab282fe8837159b7ff7eb182de
+  checksum: 10c0/9257f1fcbb84749f806cf0926ccc6d5f40bdee51ec3febbd7f72586ddf52db0b11bb8c24dc24b1b3ada8b34d80865b10a0a183c8033b028daab9f77326e44fb6
   languageName: node
   linkType: hard
 
@@ -2077,7 +2077,7 @@ __metadata:
     "@iconify/json": "npm:^2.2.264"
     "@tauri-apps/api": "npm:^2.0.3"
     "@tauri-apps/cli": "npm:^2.0.4"
-    "@types/node": "npm:^20.17.1"
+    "@types/node": "npm:^20.17.5"
     "@vitejs/plugin-vue": "npm:^5.1.4"
     "@vue/compiler-sfc": "npm:^3.5.12"
     "@vueuse/integrations": "npm:^11.1.0"
@@ -2088,7 +2088,7 @@ __metadata:
     vite-plugin-windicss: "npm:^1.9.3"
     vue: "npm:^3.5.12"
     vue-router: "npm:4.4.5"
-    vue-tsc: "npm:^2.1.8"
+    vue-tsc: "npm:^2.1.10"
     vue-virtual-scroller: "npm:^2.0.0-beta.8"
     windicss: "npm:^3.5.6"
   languageName: unknown
@@ -2737,18 +2737,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-tsc@npm:^2.1.8":
-  version: 2.1.8
-  resolution: "vue-tsc@npm:2.1.8"
+"vue-tsc@npm:^2.1.10":
+  version: 2.1.10
+  resolution: "vue-tsc@npm:2.1.10"
   dependencies:
     "@volar/typescript": "npm:~2.4.8"
-    "@vue/language-core": "npm:2.1.8"
+    "@vue/language-core": "npm:2.1.10"
     semver: "npm:^7.5.4"
   peerDependencies:
     typescript: ">=5.0.0"
   bin:
     vue-tsc: ./bin/vue-tsc.js
-  checksum: 10c0/71a6c5fa647c688e838db95570d4b56e4ad8651783b2ad8ff2a9d9c10a7730e5052db73576173ef1e57039ac0b03769c37628b667dff0cb01bb9f3e939725b20
+  checksum: 10c0/6367db8b36e59fcea432b1f9f53ac36f0389b26278cd8f1f7cc914a26ba82dda7db5a4407e8e159f33a9a788821f6e6f69037bc3db0f9f2be9fe700123032282
   languageName: node
   linkType: hard
 
