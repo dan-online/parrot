@@ -243,13 +243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/json@npm:^2.2.278":
-  version: 2.2.278
-  resolution: "@iconify/json@npm:2.2.278"
+"@iconify/json@npm:^2.2.280":
+  version: 2.2.280
+  resolution: "@iconify/json@npm:2.2.280"
   dependencies:
     "@iconify/types": "npm:*"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/3dc59b508928bf1f7801aa7e4887bd956fe156865deee632c4e8ec151ff0b24b6f30563a807fcc0e6a83d4fbed602bb6e54b962347172a23276b58ee65cb63c0
+  checksum: 10c0/ae0701ee501d56fff1f0a1145a3104ca489dce10429a436d0ee41c2c0bb7eba655a326f7d6f2220b6c8b0edda2a33403946e5b5a70cfdec6568addf55595e192
   languageName: node
   linkType: hard
 
@@ -2020,7 +2020,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "parrot@workspace:."
   dependencies:
-    "@iconify/json": "npm:^2.2.278"
+    "@iconify/json": "npm:^2.2.280"
     "@tauri-apps/api": "npm:^2.1.1"
     "@tauri-apps/cli": "npm:^2.1.0"
     "@types/node": "npm:^22.10.1"
@@ -2029,7 +2029,7 @@ __metadata:
     "@vueuse/integrations": "npm:^12.0.0"
     fuse.js: "npm:^7.0.0"
     typescript: "npm:^5.7.2"
-    unplugin-icons: "npm:^0.20.2"
+    unplugin-icons: "npm:^0.21.0"
     vite: "npm:^6.0.1"
     vite-plugin-windicss: "npm:^1.9.4"
     vue: "npm:^3.5.13"
@@ -2490,9 +2490,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-icons@npm:^0.20.2":
-  version: 0.20.2
-  resolution: "unplugin-icons@npm:0.20.2"
+"unplugin-icons@npm:^0.21.0":
+  version: 0.21.0
+  resolution: "unplugin-icons@npm:0.21.0"
   dependencies:
     "@antfu/install-pkg": "npm:^0.5.0"
     "@antfu/utils": "npm:^0.7.10"
@@ -2521,7 +2521,7 @@ __metadata:
       optional: true
     vue-template-es2015-compiler:
       optional: true
-  checksum: 10c0/b8e61756f15033f8b99715d2f955c53e117244b6cbd78482c0df54c483f5e300e194409a756c0eec5abe50b6335f08256512c8dde38999b635438391454abf61
+  checksum: 10c0/7f085d111f4a3401c1e80273240672f4bc567098db2a0b7f5e57ab21bf2a2ec848b66d5408dbc56e86a9d4945fe5f84997e15d9f7bc9af415d55ec64e1405c87
   languageName: node
   linkType: hard
 
